@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CATTI中英翻译视觉化冲刺V4：知识地图、长难句动画、学科术语、近义词、语域转换、热点训练、AI评分。" />
+  <title>CATTI 中英翻译视觉化冲刺 V4｜长难句 · 术语 · 近义词 · 语域</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-paper">
+<div id="spotlight"></div>
+<header class="hero" id="top">
+  <div class="hero-main">
+    <div class="kicker">CATTI 笔译冲刺 V4 · 双语结构 · 长难句动画 · 学科术语 · 近义词辨析</div>
+    <h1>中英翻译<br><span>专业记忆工作台</span></h1>
+    <p class="lead"><b>使用路径：</b>先点知识地图回忆框架，再用长难句实验室拆结构，用近义词和语域转换提分，最后进入热点段落与机考仿真。</p>
+    <div class="pill-row"><span>节点脑图</span><span>长句动画</span><span>实时反馈</span><span>专业术语</span><span>近义词辨析</span><span>口语→书面</span><span>聚焦灯</span><span>AI训练</span></div>
+  </div>
+  <aside class="exam-card">
+    <h2>考场锚点</h2>
+    <div class="exam-grid"><div><b>综合能力</b><strong>2小时</strong><small>语法/词汇/阅读/完形</small></div><div><b>笔译实务</b><strong>3小时</strong><small>英译汉 + 汉译英</small></div></div>
+    <p>策略：综合看限定词和同义替换；实务先保事实，再调逻辑和语域。最后校对只查硬错误：数字、否定、冠词、复数、时态、术语一致。</p>
+  </aside>
+</header>
+<nav class="toolbar" aria-label="阅读与导航工具">
+  <button class="btn" data-theme="paper">纸质</button><button class="btn" data-theme="frost">磨砂</button><button class="btn" data-theme="dark">深色</button><button class="btn" data-theme="cream">暖黄</button>
+  <button class="btn" id="prefixBold">词首加粗</button><button class="btn" id="consonantBold">辅音加粗</button><button class="btn" id="spotToggle">聚焦灯</button><button class="btn" id="cardFocus">卡片聚焦</button>
+  <label class="slider">字 <input id="fontSize" type="range" min="15" max="25" value="17"></label><label class="slider">距 <input id="lineHeight" type="range" min="1.45" max="2.25" step="0.05" value="1.76"></label><label class="slider">灯 <input id="spotSize" type="range" min="90" max="260" value="170"></label>
+  <label class="colorpick">高光 <input id="accentColor" type="color" value="#ffe08a"></label>
+  <button class="btn" id="expandAll">展开</button><button class="btn" id="collapseAll">折叠</button>
+  <input id="searchBox" class="search" placeholder="搜索：长难句 / not so much / 脑机接口 / 火星 / curb / 口语化" />
+</nav><div class="progress"><div id="progressBar"></div></div>
+<div class="layout">
+  <aside class="sidebar">
+    <a href="#map">知识地图</a><a href="#longlab">长难句实验室</a><a href="#grammar">语法规则卡</a><a href="#synonyms">近义词辨析</a><a href="#register">语域转换</a><a href="#disciplines">学科术语</a><a href="#hotspots">热点情景</a><a href="#feedback">实时反馈</a><a href="#workbench">机考仿真</a><a href="#ai">AI训练器</a><a href="#quiz">综合小测</a><a href="#sources">来源链接</a>
+    <div class="legend"><span class="dot method"></span>方法 <span class="dot grammar"></span>语法 <span class="dot lexis"></span>词汇 <span class="dot hot"></span>热点 <span class="dot practice"></span>训练</div>
+  </aside>
+  <main class="main readable" id="readableRoot">
+    <section class="section" id="map"><div class="section-head"><h2>01｜知识地图：点击节点回忆模块重点</h2><p>颜色代表知识类型，连线代表考场调用顺序。点击节点后，右侧会显示记忆点、出题方向和检查方法。</p></div><div class="map-shell"><svg id="knowledgeMap" viewBox="0 0 1200 780"></svg><aside id="nodePanel" class="node-panel"></aside></div></section>
+    <section class="section" id="longlab"><div class="section-head"><h2>02｜长难句实验室：动画拆结构</h2><p>训练顺序：找主谓 → 圈从句/非谓语 → 判断逻辑 → 重排译文。点击“逐层拆解”会按步骤显示。</p></div><div class="long-grid"><div class="lab-card"><label>选择句子<select id="longSelect"></select></label><div id="longSentence" class="sentence-box"></div><button class="btn primary" id="stepLong">逐层拆解</button><button class="btn" id="resetLong">重置</button><div id="longSteps" class="step-stack"></div></div><div class="lab-card"><h3>标准译文与提示</h3><div id="longTranslation" class="translation-box"></div><textarea id="longUser" placeholder="自己先译一遍，再点实时检查……"></textarea><button class="btn" id="checkLong">检查译文风险</button><div id="longFeedback" class="feedback"></div></div></div></section>
+    <section class="section" id="grammar"><div class="section-head"><h2>03｜英语语法规则卡：考点、格式、陷阱、例句</h2><p>按时态、名词、从句、非谓语、介词、副词、逻辑、语体等框架组织。每张卡是一个可复习的考点。</p></div><div id="grammarFilters" class="chipbar"></div><div id="grammarList" class="details-list"></div></section>
+    <section class="section" id="synonyms"><div class="section-head"><h2>04｜近义词辨析：语体、搭配、强度、对象</h2><p>综合能力和汉译英常考“差一点点”的词。这里用横向卡片比较，不用长表。</p></div><div id="synonymCards" class="syn-grid"></div></section>
+    <section class="section" id="register"><div class="section-head"><h2>05｜口语化 → 书面化：实时改写练习</h2><p>把 vague、口语、中文式表达改成 CATTI 更安全的正式表达。可输入英文或中文。</p></div><div class="register-grid"><textarea id="registerInput" placeholder="例：A lot of cities are trying to deal with plastic trash, but the result is not very good."></textarea><div><button class="btn primary" id="upgradeRegister">改成正式表达</button><button class="btn" id="sampleRegister">放入示例</button><div id="registerOutput" class="rewrite-output"></div></div></div><div class="note-card"><b>原则：</b>不要为了高级而僵硬。正式表达 = 主干清楚、搭配稳、程度准确、逻辑显性，而不是堆长词。</div></section>
+    <section class="section" id="disciplines"><div class="section-head"><h2>06｜学科术语库：先建立术语场，再翻译句子</h2><p>航天、脑机、生物、海洋、垃圾、气候、数字经济等主题都用“术语 + 逻辑链 + 标准例句”记忆。</p></div><div id="disciplineCards" class="term-grid"></div></section>
+    <section class="section" id="hotspots"><div class="section-head"><h2>07｜热点情景库：有趣主题 × 标准译法 × 训练方向</h2><p>热点不是押题；它们用于练习术语、长句、语域和逻辑链。</p></div><div id="hotspotCards" class="hot-grid"></div></section>
+    <section class="section" id="feedback"><div class="section-head"><h2>08｜实时反馈：离线检查事实、逻辑、术语和语域</h2><p>输入原文和译文，网页会即时提示数字、否定、连接词、术语命中和口语化风险。</p></div><div class="feedback-grid"><textarea id="fbSource" placeholder="原文"></textarea><textarea id="fbAnswer" placeholder="译文"></textarea></div><div id="fbPanel" class="feedback big"></div></section>
+    <section class="section" id="workbench"><div class="section-head"><h2>09｜机考仿真：分屏、计时、字数、离线校对</h2><p>模拟练习，不替代官方模拟系统。目标是熟悉分屏输入和最后校对节奏。</p></div><div class="exam-sim"><div class="sim-top"><button class="btn small" id="loadSample">换题</button><span id="timer">03:00:00</span><button class="btn small" id="startTimer">开始/暂停</button><button class="btn small" id="resetTimer">重置</button></div><div class="sim-grid"><textarea id="sourceText" readonly></textarea><textarea id="answerText" placeholder="在这里输入译文……"></textarea></div><div class="sim-bottom"><span id="wordCount">0 字 / 0 words</span><span id="offlineRubric"></span></div></div></section>
+    <section class="section" id="ai"><div class="section-head"><h2>10｜AI训练器：DeepSeek / OpenAI-compatible</h2><p>密钥只保存在当前输入框内，不写入本地存储。项目包含本地代理示例，更适合长期使用。</p></div><div class="ai-grid"><div class="ai-card"><h3>连接设置</h3><label>模式<select id="apiMode"><option value="proxy">本地代理 /api/chat</option><option value="direct">浏览器直连</option></select></label><label>Base URL<input id="baseUrl" value="https://api.deepseek.com" /></label><label>Model<input id="modelName" value="deepseek-chat" /></label><label>API Key<input id="apiKey" type="password" placeholder="仅本次页面内存使用，不保存" /></label><button class="btn" id="clearKey">清空Key</button></div><div class="ai-card"><h3>任务</h3><label>训练类型<select id="aiTask"><option value="scoreTranslation">译文评分</option><option value="longSentence">长难句拆解</option><option value="synonymCoach">近义词辨析</option><option value="registerCoach">语域升级</option><option value="hotspotMock">热点模拟</option><option value="comprehensiveMCQ">综合选择题</option></select></label><label>方向<select id="direction"><option value="EC">英译汉</option><option value="CE">汉译英</option></select></label><label>热点<select id="topicSelect"></select></label><button class="btn primary" id="runAI">生成 / 评分</button></div></div><div class="ai-work"><textarea id="aiSource" placeholder="原文 / 需要训练的材料"></textarea><textarea id="aiAnswer" placeholder="你的译文 / 答案，可留空用于生成模拟题"></textarea></div><pre id="aiOutput" class="ai-output">输出会显示在这里。浏览器直连可能因 CORS 失败；推荐本地代理。</pre></section>
+    <section class="section" id="quiz"><div class="section-head"><h2>11｜综合能力小测：语法、搭配、术语、阅读限定</h2><p>点击生成 10 题，做完立即看解释。</p></div><button class="btn primary" id="newQuiz">生成10题</button><div id="quizBox" class="quiz-box"></div></section>
+    <section class="section" id="sources"><div class="section-head"><h2>12｜来源与外部链接</h2><p>热点材料用于训练语域和术语，每年应更新。考试安排以准考证和官方通知为准。</p></div><div id="sourceCards" class="source-grid"></div></section>
+  </main>
+</div><button id="topBtn" class="top-btn">↑</button>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
