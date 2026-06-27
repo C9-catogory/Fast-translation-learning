@@ -153,6 +153,34 @@ window.CATTI_DATA = {
         "错题沉淀：同类搭配重复练"
       ],
       "exam": "冲刺阶段高收益。"
+    },
+    {
+      "id": "syllabus",
+      "title": "系统讲义",
+      "group": "grammar",
+      "x": 520,
+      "y": 360,
+      "summary": "按专业语法书的框架，把时态、名词、从句、非谓语、逻辑、语域串起来。",
+      "points": [
+        "先建立“句子骨架”：主谓宾/系表/被动/从句",
+        "再建立“信息流”：旧信息→新信息，背景→焦点",
+        "最后建立“考试流”：综合识别规则，实务稳定输出"
+      ],
+      "exam": "综合考规则辨析；实务考结构转换和语域稳定。"
+    },
+    {
+      "id": "trainer",
+      "title": "题库训练",
+      "group": "practice",
+      "x": 770,
+      "y": 480,
+      "summary": "离线优先：选择、阅读、短句翻译、搭配填空、改错；AI只是补充。",
+      "points": [
+        "可随机换题，题目直接进入训练卡",
+        "提交后显示分数、参考答案、扣分点",
+        "示范题库用于建立“为什么这样译”的模板"
+      ],
+      "exam": "综合与实务混合冲刺。"
     }
   ],
   "mapEdges": [
@@ -211,6 +239,30 @@ window.CATTI_DATA = {
     [
       "exam",
       "feedback"
+    ],
+    [
+      "grammar",
+      "syllabus"
+    ],
+    [
+      "lexis",
+      "syllabus"
+    ],
+    [
+      "syllabus",
+      "long"
+    ],
+    [
+      "syllabus",
+      "register"
+    ],
+    [
+      "exam",
+      "trainer"
+    ],
+    [
+      "trainer",
+      "practice"
     ]
   ],
   "cards": [
@@ -6927,6 +6979,1620 @@ window.CATTI_DATA = {
       ],
       "memory": "热点四格：概念定义｜核心术语｜正反影响｜治理/解决方案。",
       "drill": "用“背景→问题→措施→结果”四步写一段关于“自动化翻译”的中英双语短段。"
+    },
+    {
+      "id": "GX001",
+      "type": "grammar",
+      "channel": "tense",
+      "title": "现在完成时：结果/持续/经历",
+      "summary": "have/has + done links past action to present result",
+      "pattern": "have/has + past participle; over the past decade / to date / since / for",
+      "exam": "综合考时态信号；实务考“近年来、迄今、以来”。",
+      "trap": "last year/具体过去时间通常不用现在完成时。",
+      "memory": "过去影响现在 = present perfect",
+      "examples": [
+        {
+          "en": "Over the past decade, the city has expanded its public transport network.",
+          "zh": "过去十年间，该市不断扩展公共交通网络。"
+        }
+      ],
+      "drill": "把“近年来，海洋塑料治理取得进展”译成现在完成时。"
+    },
+    {
+      "id": "GX002",
+      "type": "grammar",
+      "channel": "tense",
+      "title": "过去完成时：过去之前的过去",
+      "summary": "had done marks an action completed before a past reference point",
+      "pattern": "had + done; by the time / before / after / already",
+      "exam": "阅读考事件顺序；实务考历史背景。",
+      "trap": "没有过去参照点时不要机械使用 had done。",
+      "memory": "先找过去锚点，再判断 had done",
+      "examples": [
+        {
+          "en": "By the time the policy was revised, several pilot projects had already been launched.",
+          "zh": "政策修订时，若干试点项目已经启动。"
+        }
+      ],
+      "drill": "判断 by 2020 应接 had done 还是 has done。"
+    },
+    {
+      "id": "GX003",
+      "type": "grammar",
+      "channel": "tense",
+      "title": "将来完成时：到某时将已完成",
+      "summary": "will have done emphasizes completion by a future deadline",
+      "pattern": "will have + done; by 2030 / by then / by the end of",
+      "exam": "规划目标类文本高频。",
+      "trap": "不要把所有“将”都写 will do。",
+      "memory": "到未来某点已完成 = future perfect",
+      "examples": [
+        {
+          "en": "By 2030, the region will have built a more resilient energy system.",
+          "zh": "到2030年，该地区将建成更具韧性的能源体系。"
+        }
+      ],
+      "drill": "用 future perfect 翻译“到本世纪中叶将实现净零”。"
+    },
+    {
+      "id": "GX004",
+      "type": "grammar",
+      "channel": "voice",
+      "title": "被动语态：客观制度语体",
+      "summary": "Passive voice foregrounds measures, rules, processes and results",
+      "pattern": "is expected to / has been adopted / was launched / is designed to",
+      "exam": "汉译英“出台/实施/建立/通过”常用被动。",
+      "trap": "不要滥用 by sb.；行动者不重要时省略。",
+      "memory": "中文无主句可用被动或形式主语",
+      "examples": [
+        {
+          "en": "A new regulatory framework has been introduced to improve data governance.",
+          "zh": "为完善数据治理，新的监管框架已经出台。"
+        }
+      ],
+      "drill": "把“出台了一系列措施”译为被动。"
+    },
+    {
+      "id": "GX005",
+      "type": "grammar",
+      "channel": "nominalization",
+      "title": "名词化：动作压缩成概念",
+      "summary": "Nominalization turns actions into formal policy concepts",
+      "pattern": "implementation / regulation / transformation / deployment",
+      "exam": "综合考词性转换；实务提升正式度。",
+      "trap": "名词化过多会僵硬，核心动作仍需清晰。",
+      "memory": "正式英语常用“动词 + 名词化对象”",
+      "examples": [
+        {
+          "en": "The implementation of the new standards will improve product traceability.",
+          "zh": "新标准的实施将提高产品可追溯性。"
+        }
+      ],
+      "drill": "把“监管加强了”改成名词化表达。"
+    },
+    {
+      "id": "GX006",
+      "type": "grammar",
+      "channel": "article",
+      "title": "冠词：类别/特指/制度名词",
+      "summary": "Articles encode whether a noun is generic, new or already identified",
+      "pattern": "a framework / the framework / the public sector / zero article for abstract general nouns",
+      "exam": "综合题高频；汉译英最易漏。",
+      "trap": "中文无冠词不代表英文可省。",
+      "memory": "先问：首次出现？特指？唯一？",
+      "examples": [
+        {
+          "en": "A carbon market can provide incentives for emissions reduction.",
+          "zh": "碳市场能够为减排提供激励。"
+        }
+      ],
+      "drill": "判断 a/the AI governance framework。"
+    },
+    {
+      "id": "GX007",
+      "type": "grammar",
+      "channel": "plural",
+      "title": "复数与不可数：information/evidence/equipment",
+      "summary": "English nouns require countability decisions",
+      "pattern": "measures, policies, emissions; information, evidence, equipment, infrastructure",
+      "exam": "综合考单复数与主谓一致。",
+      "trap": "不要写 informations/equipments。",
+      "memory": "先分可数/不可数，再看是否多项。",
+      "examples": [
+        {
+          "en": "These measures are designed to reduce emissions and improve energy efficiency.",
+          "zh": "这些措施旨在减少排放并提高能源效率。"
+        }
+      ],
+      "drill": "列出 information/equipment/policy/emission 的可数性。"
+    },
+    {
+      "id": "GX008",
+      "type": "grammar",
+      "channel": "agreement",
+      "title": "主谓一致：划掉插入成分",
+      "summary": "The verb agrees with the true subject, not the nearest noun",
+      "pattern": "The number of + plural noun + singular verb; A number of + plural noun + plural verb",
+      "exam": "综合能力高频。",
+      "trap": "不要被 of 后面的复数名词诱导。",
+      "memory": "划掉介词短语，留下主语核心。",
+      "examples": [
+        {
+          "en": "The number of satellites in low Earth orbit is increasing.",
+          "zh": "低地球轨道上的卫星数量正在增加。"
+        }
+      ],
+      "drill": "选择：The number of applications ___ growing. is/are"
+    },
+    {
+      "id": "GX009",
+      "type": "grammar",
+      "channel": "apposition",
+      "title": "同位语从句：解释名词内容",
+      "summary": "that-clauses after fact/idea/evidence/proposal often explain content",
+      "pattern": "the fact that / evidence that / the proposal that",
+      "exam": "阅读长句和综合语法常考。",
+      "trap": "同位语从句不缺成分；定语从句通常缺成分。",
+      "memory": "名词后 that + 完整句子 = 多半同位语。",
+      "examples": [
+        {
+          "en": "The evidence that microplastics enter the food chain has raised public concern.",
+          "zh": "微塑料进入食物链的证据引发了公众关切。"
+        }
+      ],
+      "drill": "判断 the fact that... 中 that 的功能。"
+    },
+    {
+      "id": "GX010",
+      "type": "grammar",
+      "channel": "relative",
+      "title": "定语从句：限制范围不能漏",
+      "summary": "Restrictive clauses narrow the scope; non-restrictive clauses add information",
+      "pattern": "that/which/who/where/whose; non-restrictive clauses use commas",
+      "exam": "阅读考限定范围；英译汉常需拆译。",
+      "trap": "漏掉限定条件会扩大范围。",
+      "memory": "先判断：定义对象还是补充信息？",
+      "examples": [
+        {
+          "en": "Policies that ignore local conditions may fail to deliver lasting results.",
+          "zh": "忽视地方条件的政策可能难以取得持久成效。"
+        }
+      ],
+      "drill": "把 which 从句拆成自然汉语。"
+    },
+    {
+      "id": "GX011",
+      "type": "grammar",
+      "channel": "participle",
+      "title": "现在分词：主动/伴随/结果",
+      "summary": "-ing can show active modification, accompanying action or natural result",
+      "pattern": "leading to / resulting in / enabling / creating / threatening",
+      "exam": "长难句常用 -ing 串联结果。",
+      "trap": "不要把所有 -ing 译成“正在”。",
+      "memory": "判断：修饰名词、伴随还是结果。",
+      "examples": [
+        {
+          "en": "Rising temperatures are disrupting marine ecosystems, threatening biodiversity and fisheries.",
+          "zh": "气温上升正在扰乱海洋生态系统，威胁生物多样性和渔业。"
+        }
+      ],
+      "drill": "圈出 -ing 结构并判断逻辑。"
+    },
+    {
+      "id": "GX012",
+      "type": "grammar",
+      "channel": "participle",
+      "title": "过去分词：被动/完成/状态",
+      "summary": "-ed participles often compress passive relative clauses",
+      "pattern": "data collected from sensors / standards adopted by agencies",
+      "exam": "英译汉常前置或拆句。",
+      "trap": "不要把非谓语误认为谓语。",
+      "memory": "无助动词的 -ed 多半不是谓语。",
+      "examples": [
+        {
+          "en": "Data collected from wearable devices can support early disease detection.",
+          "zh": "从可穿戴设备收集的数据可支持疾病早期检测。"
+        }
+      ],
+      "drill": "翻译后置过去分词。"
+    },
+    {
+      "id": "GX013",
+      "type": "grammar",
+      "channel": "infinitive",
+      "title": "不定式：目的/预期/后置修饰",
+      "summary": "to do can mark purpose, expected action or post-modification",
+      "pattern": "efforts to / measures to / be designed to / be expected to",
+      "exam": "政策文本高频。",
+      "trap": "to do 不一定译“去做”。",
+      "memory": "measures/efforts/plans + to do = 后置目的。",
+      "examples": [
+        {
+          "en": "Efforts to curb plastic leakage require coordinated action across the value chain.",
+          "zh": "遏制塑料泄漏的努力需要价值链各环节协同采取行动。"
+        }
+      ],
+      "drill": "翻译 efforts to strengthen biosafety governance。"
+    },
+    {
+      "id": "GX014",
+      "type": "grammar",
+      "channel": "preposition",
+      "title": "介词搭配：名词后的关系编码",
+      "summary": "Small prepositions encode direction, object, impact and reliance",
+      "pattern": "access to / impact on / response to / demand for / reliance on",
+      "exam": "综合题和实务错误高发。",
+      "trap": "不要按中文“对/在/为”机械对应。",
+      "memory": "记名词 + 介词 + 对象。",
+      "examples": [
+        {
+          "en": "Public access to reliable information is essential during health emergencies.",
+          "zh": "在公共卫生突发事件中，公众获取可靠信息至关重要。"
+        }
+      ],
+      "drill": "填空：resilience ___ climate risks。"
+    },
+    {
+      "id": "GX015",
+      "type": "grammar",
+      "channel": "modality",
+      "title": "情态强度：must/should/may/can",
+      "summary": "Modal verbs encode obligation, possibility, ability and stance",
+      "pattern": "must obligation; should recommendation; may possibility; can ability/possibility",
+      "exam": "阅读态度题与实务强度控制。",
+      "trap": "should 不等于 must；may 不等于 will。",
+      "memory": "先判断义务、可能、能力还是建议。",
+      "examples": [
+        {
+          "en": "Governments should ensure that emerging technologies are developed responsibly.",
+          "zh": "各国政府应确保新兴技术以负责任的方式发展。"
+        }
+      ],
+      "drill": "区分 may pose risks 与 must prevent risks。"
+    },
+    {
+      "id": "GX016",
+      "type": "grammar",
+      "channel": "hedging",
+      "title": "缓和表达：避免绝对化",
+      "summary": "Hedging controls certainty in academic and policy texts",
+      "pattern": "may / might / likely / potential / tend to / appear to / suggest",
+      "exam": "阅读态度题高频；实务漏译会改变事实强度。",
+      "trap": "不要把 may/likely 译没。",
+      "memory": "缓和词必须保留。",
+      "examples": [
+        {
+          "en": "Brain-computer interfaces may offer new options for patients with severe paralysis.",
+          "zh": "脑机接口可能为重度瘫痪患者提供新的选择。"
+        }
+      ],
+      "drill": "标出 may/potential/likely 的译法。"
+    },
+    {
+      "id": "GX017",
+      "type": "grammar",
+      "channel": "concession",
+      "title": "让步：although/while/despite",
+      "summary": "Concession gives resistance; the main clause carries the core claim",
+      "pattern": "although / even though / despite / while / whereas",
+      "exam": "阅读常考作者真正观点。",
+      "trap": "while 不总是“当……时候”。",
+      "memory": "让步从句=背景阻力；主句=核心判断。",
+      "examples": [
+        {
+          "en": "Although the technology is promising, its long-term safety remains uncertain.",
+          "zh": "尽管该技术前景可期，但其长期安全性仍不确定。"
+        }
+      ],
+      "drill": "判断 while costs are falling, demand is rising。"
+    },
+    {
+      "id": "GX018",
+      "type": "grammar",
+      "channel": "cause",
+      "title": "因果：because/due to/therefore",
+      "summary": "Causal connectors require different grammatical forms",
+      "pattern": "because + clause; due to + noun; therefore + result clause",
+      "exam": "综合和实务都考。",
+      "trap": "due to 后不能直接接完整句。",
+      "memory": "连接词决定句法形态。",
+      "examples": [
+        {
+          "en": "Demand for clean energy has increased because battery costs have fallen.",
+          "zh": "由于电池成本下降，清洁能源需求有所增加。"
+        }
+      ],
+      "drill": "改错：Due to costs have fallen。"
+    },
+    {
+      "id": "GX019",
+      "type": "grammar",
+      "channel": "condition",
+      "title": "条件：if/unless/provided that",
+      "summary": "Condition clauses define scope and applicability",
+      "pattern": "if / unless / provided that / as long as / where",
+      "exam": "法律、政策、技术限制高频。",
+      "trap": "unless = if not，漏译会反转条件。",
+      "memory": "条件句影响适用范围，优先标出。",
+      "examples": [
+        {
+          "en": "Unless data are properly anonymized, privacy risks may remain.",
+          "zh": "如果数据未得到妥善匿名化处理，隐私风险可能依然存在。"
+        }
+      ],
+      "drill": "翻译 provided that safeguards are in place。"
+    },
+    {
+      "id": "GX020",
+      "type": "grammar",
+      "channel": "comparison",
+      "title": "比较与否定：no more than/no less than",
+      "summary": "Comparatives with negation are high-risk accuracy points",
+      "pattern": "more than / less than / no more than / no less than / not more than",
+      "exam": "综合题与数字翻译高频。",
+      "trap": "no less than 不要译反。",
+      "memory": "比较 + 否定先画框。",
+      "examples": [
+        {
+          "en": "No fewer than 30 countries have introduced rules on AI-generated content.",
+          "zh": "已有不少于30个国家出台了关于人工智能生成内容的规则。"
+        }
+      ],
+      "drill": "区分 no more than 与 not more than。"
+    },
+    {
+      "id": "GX021",
+      "type": "grammar",
+      "channel": "inversion",
+      "title": "倒装：否定/only 前置",
+      "summary": "Fronted negative or restrictive adverbials often trigger inversion",
+      "pattern": "Not only...but also; Only when...can; Rarely have...",
+      "exam": "综合语法题常考。",
+      "trap": "不要按正常语序找谓语。",
+      "memory": "看到 only/negative 前置，检查助动词。",
+      "examples": [
+        {
+          "en": "Only when standards are enforceable can they shape corporate behavior.",
+          "zh": "只有标准具备可执行性，才能影响企业行为。"
+        }
+      ],
+      "drill": "改写成 only when 倒装。"
+    },
+    {
+      "id": "GX022",
+      "type": "grammar",
+      "channel": "parallel",
+      "title": "平行结构：同级并列",
+      "summary": "Parallel structures must match in form and level",
+      "pattern": "to reduce, to improve, and to strengthen; not only...but also",
+      "exam": "改错和汉译英高频。",
+      "trap": "不要把名词、动词、从句乱并列。",
+      "memory": "and/or 前后同词性同层级。",
+      "examples": [
+        {
+          "en": "The initiative aims to reduce waste, improve recycling, and promote circular design.",
+          "zh": "该倡议旨在减少废弃物、提高回收利用水平并促进循环设计。"
+        }
+      ],
+      "drill": "修正 to reduce, improving, and circular design。"
+    },
+    {
+      "id": "VX001",
+      "type": "term",
+      "channel": "technology",
+      "title": "accelerate the adoption of",
+      "summary": "加快采用/普及",
+      "pattern": "accelerate the adoption of + object/context；译作：加快采用/普及。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Accelerate the adoption of clean technologies through incentives.",
+          "zh": "通过激励措施加快清洁技术的采用。"
+        }
+      ],
+      "drill": "用 accelerate the adoption of 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX002",
+      "type": "term",
+      "channel": "technology",
+      "title": "enable real-time monitoring of",
+      "summary": "实现对……实时监测",
+      "pattern": "enable real-time monitoring of + object/context；译作：实现对……实时监测。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Sensors enable real-time monitoring of marine pollution.",
+          "zh": "传感器可实现对海洋污染的实时监测。"
+        }
+      ],
+      "drill": "用 enable real-time monitoring of 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX003",
+      "type": "term",
+      "channel": "technology",
+      "title": "raise concerns about",
+      "summary": "引发对……担忧",
+      "pattern": "raise concerns about + object/context；译作：引发对……担忧。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Neural implants raise concerns about privacy and autonomy.",
+          "zh": "神经植入设备引发了对隐私和自主性的担忧。"
+        }
+      ],
+      "drill": "用 raise concerns about 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX004",
+      "type": "term",
+      "channel": "technology",
+      "title": "pose ethical and regulatory challenges",
+      "summary": "带来伦理和监管挑战",
+      "pattern": "pose ethical and regulatory challenges + object/context；译作：带来伦理和监管挑战。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Brain-computer interfaces pose ethical and regulatory challenges.",
+          "zh": "脑机接口带来伦理和监管挑战。"
+        }
+      ],
+      "drill": "用 pose ethical and regulatory challenges 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX005",
+      "type": "term",
+      "channel": "technology",
+      "title": "scale up production",
+      "summary": "扩大生产规模",
+      "pattern": "scale up production + object/context；译作：扩大生产规模。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The company plans to scale up battery production.",
+          "zh": "该公司计划扩大电池生产规模。"
+        }
+      ],
+      "drill": "用 scale up production 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX006",
+      "type": "term",
+      "channel": "technology",
+      "title": "bring down costs",
+      "summary": "降低成本",
+      "pattern": "bring down costs + object/context；译作：降低成本。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Reusable rockets can bring down launch costs.",
+          "zh": "可重复使用火箭能够降低发射成本。"
+        }
+      ],
+      "drill": "用 bring down costs 写一个 technology 语境的句子。"
+    },
+    {
+      "id": "VX007",
+      "type": "term",
+      "channel": "space",
+      "title": "launch a crewed mission to",
+      "summary": "发射载人任务前往……",
+      "pattern": "launch a crewed mission to + object/context；译作：发射载人任务前往……。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The agency aims to launch a crewed mission to Mars.",
+          "zh": "该机构旨在发射载人火星任务。"
+        }
+      ],
+      "drill": "用 launch a crewed mission to 写一个 space 语境的句子。"
+    },
+    {
+      "id": "VX008",
+      "type": "term",
+      "channel": "space",
+      "title": "conduct an orbital test flight",
+      "summary": "进行轨道试飞",
+      "pattern": "conduct an orbital test flight + object/context；译作：进行轨道试飞。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The vehicle conducted an orbital test flight.",
+          "zh": "该飞行器进行了轨道试飞。"
+        }
+      ],
+      "drill": "用 conduct an orbital test flight 写一个 space 语境的句子。"
+    },
+    {
+      "id": "VX009",
+      "type": "term",
+      "channel": "space",
+      "title": "place satellites into orbit",
+      "summary": "将卫星送入轨道",
+      "pattern": "place satellites into orbit + object/context；译作：将卫星送入轨道。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The rocket placed several satellites into orbit.",
+          "zh": "火箭将数颗卫星送入轨道。"
+        }
+      ],
+      "drill": "用 place satellites into orbit 写一个 space 语境的句子。"
+    },
+    {
+      "id": "VX010",
+      "type": "term",
+      "channel": "space",
+      "title": "space debris mitigation",
+      "summary": "空间碎片治理/缓解",
+      "pattern": "space debris mitigation + object/context；译作：空间碎片治理/缓解。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Space debris mitigation requires international coordination.",
+          "zh": "空间碎片治理需要国际协调。"
+        }
+      ],
+      "drill": "用 space debris mitigation 写一个 space 语境的句子。"
+    },
+    {
+      "id": "VX011",
+      "type": "term",
+      "channel": "biology",
+      "title": "sequence the genome of",
+      "summary": "测序……基因组",
+      "pattern": "sequence the genome of + object/context；译作：测序……基因组。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Researchers sequenced the genome of a newly identified pathogen.",
+          "zh": "研究人员测序了一种新识别病原体的基因组。"
+        }
+      ],
+      "drill": "用 sequence the genome of 写一个 biology 语境的句子。"
+    },
+    {
+      "id": "VX012",
+      "type": "term",
+      "channel": "biology",
+      "title": "detect pathogens at an early stage",
+      "summary": "早期检测病原体",
+      "pattern": "detect pathogens at an early stage + object/context；译作：早期检测病原体。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Genomic surveillance helps detect pathogens at an early stage.",
+          "zh": "基因组监测有助于早期检测病原体。"
+        }
+      ],
+      "drill": "用 detect pathogens at an early stage 写一个 biology 语境的句子。"
+    },
+    {
+      "id": "VX013",
+      "type": "term",
+      "channel": "biology",
+      "title": "strengthen biosafety protocols",
+      "summary": "加强生物安全规程",
+      "pattern": "strengthen biosafety protocols + object/context；译作：加强生物安全规程。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Labs must strengthen biosafety protocols.",
+          "zh": "实验室必须加强生物安全规程。"
+        }
+      ],
+      "drill": "用 strengthen biosafety protocols 写一个 biology 语境的句子。"
+    },
+    {
+      "id": "VX014",
+      "type": "term",
+      "channel": "biology",
+      "title": "prevent cross-species transmission",
+      "summary": "防止跨物种传播",
+      "pattern": "prevent cross-species transmission + object/context；译作：防止跨物种传播。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Monitoring wildlife can prevent cross-species transmission.",
+          "zh": "监测野生动物可防止跨物种传播。"
+        }
+      ],
+      "drill": "用 prevent cross-species transmission 写一个 biology 语境的句子。"
+    },
+    {
+      "id": "VX015",
+      "type": "term",
+      "channel": "ocean",
+      "title": "protect marine biodiversity",
+      "summary": "保护海洋生物多样性",
+      "pattern": "protect marine biodiversity + object/context；译作：保护海洋生物多样性。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Marine protected areas help protect marine biodiversity.",
+          "zh": "海洋保护区有助于保护海洋生物多样性。"
+        }
+      ],
+      "drill": "用 protect marine biodiversity 写一个 ocean 语境的句子。"
+    },
+    {
+      "id": "VX016",
+      "type": "term",
+      "channel": "ocean",
+      "title": "restore coastal ecosystems",
+      "summary": "修复沿海生态系统",
+      "pattern": "restore coastal ecosystems + object/context；译作：修复沿海生态系统。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Mangrove restoration can restore coastal ecosystems.",
+          "zh": "红树林修复能够恢复沿海生态系统。"
+        }
+      ],
+      "drill": "用 restore coastal ecosystems 写一个 ocean 语境的句子。"
+    },
+    {
+      "id": "VX017",
+      "type": "term",
+      "channel": "ocean",
+      "title": "combat illegal, unreported and unregulated fishing",
+      "summary": "打击非法、未报告和无管制捕捞",
+      "pattern": "combat illegal, unreported and unregulated fishing + object/context；译作：打击非法、未报告和无管制捕捞。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "States need to combat illegal, unreported and unregulated fishing.",
+          "zh": "各国需要打击非法、未报告和无管制捕捞。"
+        }
+      ],
+      "drill": "用 combat illegal, unreported and unregulated fishing 写一个 ocean 语境的句子。"
+    },
+    {
+      "id": "VX018",
+      "type": "term",
+      "channel": "waste",
+      "title": "divert waste from landfills",
+      "summary": "减少进入填埋场的垃圾",
+      "pattern": "divert waste from landfills + object/context；译作：减少进入填埋场的垃圾。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Recycling programs divert waste from landfills.",
+          "zh": "回收项目可减少进入填埋场的垃圾。"
+        }
+      ],
+      "drill": "用 divert waste from landfills 写一个 waste 语境的句子。"
+    },
+    {
+      "id": "VX019",
+      "type": "term",
+      "channel": "waste",
+      "title": "close the loop on materials",
+      "summary": "实现材料闭环",
+      "pattern": "close the loop on materials + object/context；译作：实现材料闭环。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Circular design helps close the loop on materials.",
+          "zh": "循环设计有助于实现材料闭环。"
+        }
+      ],
+      "drill": "用 close the loop on materials 写一个 waste 语境的句子。"
+    },
+    {
+      "id": "VX020",
+      "type": "term",
+      "channel": "waste",
+      "title": "reduce plastic leakage into the environment",
+      "summary": "减少塑料向环境泄漏",
+      "pattern": "reduce plastic leakage into the environment + object/context；译作：减少塑料向环境泄漏。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Better collection systems reduce plastic leakage into the environment.",
+          "zh": "更完善的收集系统可减少塑料向环境泄漏。"
+        }
+      ],
+      "drill": "用 reduce plastic leakage into the environment 写一个 waste 语境的句子。"
+    },
+    {
+      "id": "VX021",
+      "type": "term",
+      "channel": "climate",
+      "title": "phase down coal consumption",
+      "summary": "逐步减少煤炭消费",
+      "pattern": "phase down coal consumption + object/context；译作：逐步减少煤炭消费。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The plan seeks to phase down coal consumption.",
+          "zh": "该计划旨在逐步减少煤炭消费。"
+        }
+      ],
+      "drill": "用 phase down coal consumption 写一个 climate 语境的句子。"
+    },
+    {
+      "id": "VX022",
+      "type": "term",
+      "channel": "climate",
+      "title": "enhance climate resilience",
+      "summary": "增强气候韧性",
+      "pattern": "enhance climate resilience + object/context；译作：增强气候韧性。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Cities must enhance climate resilience.",
+          "zh": "城市必须增强气候韧性。"
+        }
+      ],
+      "drill": "用 enhance climate resilience 写一个 climate 语境的句子。"
+    },
+    {
+      "id": "VX023",
+      "type": "term",
+      "channel": "climate",
+      "title": "mobilize climate finance",
+      "summary": "动员气候资金",
+      "pattern": "mobilize climate finance + object/context；译作：动员气候资金。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Developing economies need support to mobilize climate finance.",
+          "zh": "发展中经济体需要支持以动员气候资金。"
+        }
+      ],
+      "drill": "用 mobilize climate finance 写一个 climate 语境的句子。"
+    },
+    {
+      "id": "VX024",
+      "type": "term",
+      "channel": "economy",
+      "title": "unleash productive potential",
+      "summary": "释放生产潜力",
+      "pattern": "unleash productive potential + object/context；译作：释放生产潜力。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Digital tools can unleash productive potential.",
+          "zh": "数字工具能够释放生产潜力。"
+        }
+      ],
+      "drill": "用 unleash productive potential 写一个 economy 语境的句子。"
+    },
+    {
+      "id": "VX025",
+      "type": "term",
+      "channel": "economy",
+      "title": "upgrade industrial chains",
+      "summary": "升级产业链",
+      "pattern": "upgrade industrial chains + object/context；译作：升级产业链。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The policy will help upgrade industrial chains.",
+          "zh": "该政策将有助于升级产业链。"
+        }
+      ],
+      "drill": "用 upgrade industrial chains 写一个 economy 语境的句子。"
+    },
+    {
+      "id": "VX026",
+      "type": "term",
+      "channel": "society",
+      "title": "ensure equitable access to",
+      "summary": "确保公平获取……",
+      "pattern": "ensure equitable access to + object/context；译作：确保公平获取……。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Public policy should ensure equitable access to healthcare.",
+          "zh": "公共政策应确保公平获得医疗服务。"
+        }
+      ],
+      "drill": "用 ensure equitable access to 写一个 society 语境的句子。"
+    },
+    {
+      "id": "VX027",
+      "type": "term",
+      "channel": "society",
+      "title": "bridge the digital divide",
+      "summary": "弥合数字鸿沟",
+      "pattern": "bridge the digital divide + object/context；译作：弥合数字鸿沟。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Community programs can bridge the digital divide.",
+          "zh": "社区项目可以弥合数字鸿沟。"
+        }
+      ],
+      "drill": "用 bridge the digital divide 写一个 society 语境的句子。"
+    },
+    {
+      "id": "VX028",
+      "type": "term",
+      "channel": "law",
+      "title": "strike a balance between",
+      "summary": "在……之间取得平衡",
+      "pattern": "strike a balance between + object/context；译作：在……之间取得平衡。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Regulators must strike a balance between innovation and safety.",
+          "zh": "监管者必须在创新与安全之间取得平衡。"
+        }
+      ],
+      "drill": "用 strike a balance between 写一个 law 语境的句子。"
+    },
+    {
+      "id": "VX029",
+      "type": "term",
+      "channel": "law",
+      "title": "hold companies accountable for",
+      "summary": "追究企业对……责任",
+      "pattern": "hold companies accountable for + object/context；译作：追究企业对……责任。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Rules should hold companies accountable for data misuse.",
+          "zh": "规则应追究企业滥用数据的责任。"
+        }
+      ],
+      "drill": "用 hold companies accountable for 写一个 law 语境的句子。"
+    },
+    {
+      "id": "VX030",
+      "type": "term",
+      "channel": "health",
+      "title": "ensure timely access to vaccines",
+      "summary": "确保及时获得疫苗",
+      "pattern": "ensure timely access to vaccines + object/context；译作：确保及时获得疫苗。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Global cooperation can ensure timely access to vaccines.",
+          "zh": "全球合作可确保及时获得疫苗。"
+        }
+      ],
+      "drill": "用 ensure timely access to vaccines 写一个 health 语境的句子。"
+    },
+    {
+      "id": "VX031",
+      "type": "term",
+      "channel": "degree",
+      "title": "significantly / substantially / markedly",
+      "summary": "显著/大幅/明显",
+      "pattern": "significantly / substantially / markedly + object/context；译作：显著/大幅/明显。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "Emissions have fallen substantially since 2020.",
+          "zh": "自2020年以来，排放量已大幅下降。"
+        }
+      ],
+      "drill": "用 significantly / substantially / markedly 写一个 degree 语境的句子。"
+    },
+    {
+      "id": "VX032",
+      "type": "term",
+      "channel": "degree",
+      "title": "slightly / marginally / modestly",
+      "summary": "小幅/略微/适度",
+      "pattern": "slightly / marginally / modestly + object/context；译作：小幅/略微/适度。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The rate increased modestly in the second quarter.",
+          "zh": "第二季度该比率小幅上升。"
+        }
+      ],
+      "drill": "用 slightly / marginally / modestly 写一个 degree 语境的句子。"
+    },
+    {
+      "id": "VX033",
+      "type": "term",
+      "channel": "time",
+      "title": "over the past decade / in recent years / to date",
+      "summary": "过去十年/近年来/迄今",
+      "pattern": "over the past decade / in recent years / to date + object/context；译作：过去十年/近年来/迄今。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "To date, the program has supported 200 communities.",
+          "zh": "迄今，该项目已支持200个社区。"
+        }
+      ],
+      "drill": "用 over the past decade / in recent years / to date 写一个 time 语境的句子。"
+    },
+    {
+      "id": "VX034",
+      "type": "term",
+      "channel": "logic",
+      "title": "against the backdrop of",
+      "summary": "在……背景下",
+      "pattern": "against the backdrop of + object/context；译作：在……背景下。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "The reform was introduced against the backdrop of rapid urbanization.",
+          "zh": "该改革是在快速城镇化背景下推出的。"
+        }
+      ],
+      "drill": "用 against the backdrop of 写一个 logic 语境的句子。"
+    },
+    {
+      "id": "VX035",
+      "type": "term",
+      "channel": "logic",
+      "title": "in the wake of",
+      "summary": "在……之后/受……影响",
+      "pattern": "in the wake of + object/context；译作：在……之后/受……影响。",
+      "exam": "综合考搭配；实务考术语一致和动宾自然。",
+      "trap": "不要只背中文意思，要同时背宾语和场景。",
+      "memory": "短语 = 动词/名词 + 对象 + 场景。",
+      "examples": [
+        {
+          "en": "New rules were adopted in the wake of several data breaches.",
+          "zh": "几起数据泄露事件后，新规则被采纳。"
+        }
+      ],
+      "drill": "用 in the wake of 写一个 logic 语境的句子。"
+    },
+    {
+      "id": "SX001",
+      "type": "synonym",
+      "channel": "precision",
+      "title": "accurate / precise / exact / faithful",
+      "summary": "accurate 正确；precise 精确；exact 完全一致；faithful 忠实原意。",
+      "pattern": "accurate data; precise measurement; exact figure; faithful translation",
+      "exam": "综合词汇题和实务评价。",
+      "trap": "不要把 precise 用于忠实原文。",
+      "memory": "对象决定词。",
+      "examples": [
+        {
+          "en": "A faithful translation is not always a word-for-word translation.",
+          "zh": "忠实的译文并不总是逐字翻译。"
+        }
+      ],
+      "drill": "判断 accurate/precise/faithful translation。"
+    },
+    {
+      "id": "SX002",
+      "type": "synonym",
+      "channel": "change",
+      "title": "reform / revise / amend / overhaul",
+      "summary": "reform 改制度；revise 修文本；amend 改法律；overhaul 全面整顿。",
+      "pattern": "reform the system; revise the plan; amend the law; overhaul the mechanism",
+      "exam": "法律政策类高频。",
+      "trap": "修改法律常用 amend。",
+      "memory": "制度文本法律大修分开记。",
+      "examples": [
+        {
+          "en": "The law was amended to strengthen personal data protection.",
+          "zh": "该法律经修订以加强个人数据保护。"
+        }
+      ],
+      "drill": "选择 amend/revise the constitution。"
+    },
+    {
+      "id": "SX003",
+      "type": "synonym",
+      "channel": "risk",
+      "title": "risk / threat / hazard / vulnerability",
+      "summary": "risk 风险可能性；threat 威胁来源；hazard 危害因素；vulnerability 脆弱性。",
+      "pattern": "climate risk; cyber threat; chemical hazard; social vulnerability",
+      "exam": "科技安全、生物安全、气候题常考。",
+      "trap": "vulnerability 不只等于“漏洞”。",
+      "memory": "risk可能，threat来源，hazard危害物。",
+      "examples": [
+        {
+          "en": "Coastal communities face growing climate risks and social vulnerabilities.",
+          "zh": "沿海社区面临日益加剧的气候风险和社会脆弱性。"
+        }
+      ],
+      "drill": "区分 threat 与 vulnerability。"
+    },
+    {
+      "id": "SX004",
+      "type": "synonym",
+      "channel": "reduce",
+      "title": "reduce / curb / mitigate / rein in",
+      "summary": "reduce 中性；curb 遏制趋势；mitigate 减轻影响；rein in 控制过度。",
+      "pattern": "curb emissions; mitigate risks; rein in speculation",
+      "exam": "实务选词提分。",
+      "trap": "mitigate 多是减轻影响/风险。",
+      "memory": "坏趋势 curb，影响 mitigate。",
+      "examples": [
+        {
+          "en": "The new rules aim to rein in excessive use of personal data.",
+          "zh": "新规旨在遏制个人数据的过度使用。"
+        }
+      ],
+      "drill": "选择 mitigate the impact。"
+    },
+    {
+      "id": "SX005",
+      "type": "synonym",
+      "channel": "promote",
+      "title": "promote / advance / foster / facilitate / drive",
+      "summary": "promote 推动；advance 推进议程；foster 培育；facilitate 便利；drive 驱动。",
+      "pattern": "advance cooperation; foster innovation; facilitate trade; drive growth",
+      "exam": "汉译英“促进”高频。",
+      "trap": "不要所有促进都写 promote。",
+      "memory": "对象决定动词。",
+      "examples": [
+        {
+          "en": "Open data can facilitate research and foster innovation.",
+          "zh": "开放数据可以便利研究并培育创新。"
+        }
+      ],
+      "drill": "翻译“促进国际合作”。"
+    },
+    {
+      "id": "RX001",
+      "type": "register",
+      "channel": "formal verbs",
+      "title": "get / obtain / acquire / secure",
+      "summary": "get 口语；obtain 正式获得；acquire 获得能力/资产；secure 争取到。",
+      "pattern": "obtain data; acquire skills; secure funding",
+      "exam": "汉译英高频。",
+      "trap": "政策句不要写 get support。",
+      "memory": "正式译文换 obtain/acquire/secure。",
+      "examples": [
+        {
+          "en": "The project secured funding from several public institutions.",
+          "zh": "该项目获得了若干公共机构的资金支持。"
+        }
+      ],
+      "drill": "改写 get support。"
+    },
+    {
+      "id": "RX002",
+      "type": "register",
+      "channel": "formal nouns",
+      "title": "thing / factor / issue / measure / mechanism",
+      "summary": "thing 太泛；按语义换 factor/issue/measure/mechanism。",
+      "pattern": "social factors; governance issues; policy measures; coordination mechanisms",
+      "exam": "实务语域扣分点。",
+      "trap": "不要让 thing 出现在正式译文中。",
+      "memory": "先判断原因、问题、措施、机制。",
+      "examples": [
+        {
+          "en": "Several factors have contributed to the decline in recycling rates.",
+          "zh": "多种因素导致回收率下降。"
+        }
+      ],
+      "drill": "改写 many things affect the result。"
+    },
+    {
+      "id": "RX003",
+      "type": "register",
+      "channel": "formal stance",
+      "title": "very important / essential / critical / vital",
+      "summary": "very important 普通；essential 必不可少；critical 关键且紧迫；vital 至关重要。",
+      "pattern": "critical infrastructure; essential services; vital interests",
+      "exam": "综合词义和语域。",
+      "trap": "critical 不总是“批判的”。",
+      "memory": "程度词看对象。",
+      "examples": [
+        {
+          "en": "Reliable data are essential for evidence-based policymaking.",
+          "zh": "可靠数据对循证决策至关重要。"
+        }
+      ],
+      "drill": "替换 very important for policy。"
+    },
+    {
+      "id": "HX081",
+      "type": "hotspot",
+      "channel": "space",
+      "title": "太空垃圾与轨道治理",
+      "summary": "卫星互联网扩张使轨道拥堵、碰撞风险和空间碎片治理成为热点。",
+      "pattern": "space debris mitigation; orbital congestion; collision avoidance; end-of-life disposal",
+      "exam": "实务常考科技发展与治理平衡。",
+      "trap": "debris 在航天语境中常译空间碎片。",
+      "memory": "太空垃圾 = debris；治理 = mitigation/governance。",
+      "examples": [
+        {
+          "en": "The rapid growth of satellite constellations has increased concerns about orbital congestion and space debris.",
+          "zh": "卫星星座的快速增长加剧了人们对轨道拥堵和空间碎片的担忧。"
+        }
+      ],
+      "drill": "写一句商业航天需要国际规则。"
+    },
+    {
+      "id": "HX082",
+      "type": "hotspot",
+      "channel": "space",
+      "title": "月球基地与原位资源利用",
+      "summary": "月球科研站、水冰和原位资源利用常出现在航天文本。",
+      "pattern": "lunar base; in-situ resource utilization; water ice; crewed exploration",
+      "exam": "专业术语辨识和段落翻译。",
+      "trap": "in-situ 在航天中常译“原位”。",
+      "memory": "ISRU = 原位资源利用。",
+      "examples": [
+        {
+          "en": "In-situ resource utilization may reduce the cost of long-duration lunar missions.",
+          "zh": "原位资源利用可能降低长期月球任务的成本。"
+        }
+      ],
+      "drill": "翻译 lunar south pole。"
+    },
+    {
+      "id": "HX083",
+      "type": "hotspot",
+      "channel": "neurotech",
+      "title": "神经数据隐私",
+      "summary": "脑机接口涉及神经信号、意图推断、医疗伦理和神经数据保护。",
+      "pattern": "neural data; cognitive liberty; informed consent; neural signals",
+      "exam": "科技伦理热点。",
+      "trap": "neural data 在制度语境中是神经数据。",
+      "memory": "神经数据比普通健康数据更敏感。",
+      "examples": [
+        {
+          "en": "Neural data may reveal information about a person’s intentions, preferences and health conditions.",
+          "zh": "神经数据可能揭示个人意图、偏好和健康状况等信息。"
+        }
+      ],
+      "drill": "翻译 informed consent。"
+    },
+    {
+      "id": "HX084",
+      "type": "hotspot",
+      "channel": "biotech",
+      "title": "合成生物学",
+      "summary": "合成生物学涉及设计生物系统、基因回路、伦理监管和生物安全。",
+      "pattern": "synthetic biology; gene circuit; biosecurity; dual-use research",
+      "exam": "生物科技翻译高频。",
+      "trap": "dual-use 要译出潜在滥用风险。",
+      "memory": "双重用途 = 可造福也可滥用。",
+      "examples": [
+        {
+          "en": "Synthetic biology offers new tools for medicine and agriculture, but it also raises biosecurity concerns.",
+          "zh": "合成生物学为医学和农业提供了新工具，但也引发生物安全担忧。"
+        }
+      ],
+      "drill": "翻译 dual-use research of concern。"
+    },
+    {
+      "id": "HX085",
+      "type": "hotspot",
+      "channel": "health",
+      "title": "抗微生物药物耐药性",
+      "summary": "AMR 涉及抗生素滥用、监测和新药研发。",
+      "pattern": "antimicrobial resistance; antibiotic stewardship; surveillance; resistant strains",
+      "exam": "公共卫生热点。",
+      "trap": "antimicrobial 范围广于 antibacterial。",
+      "memory": "AMR = 抗微生物药物耐药性。",
+      "examples": [
+        {
+          "en": "Antimicrobial resistance could undermine decades of progress in modern medicine.",
+          "zh": "抗微生物药物耐药性可能削弱现代医学数十年来取得的进展。"
+        }
+      ],
+      "drill": "翻译 antibiotic stewardship。"
+    },
+    {
+      "id": "HX086",
+      "type": "hotspot",
+      "channel": "ocean",
+      "title": "深海采矿",
+      "summary": "深海采矿涉及关键矿产、海底生态、监管空白和预防原则。",
+      "pattern": "deep-sea mining; critical minerals; seabed ecosystems; precautionary principle",
+      "exam": "海洋治理热点。",
+      "trap": "seabed 是海床/海底，不是海边。",
+      "memory": "矿产需求 vs 生态风险。",
+      "examples": [
+        {
+          "en": "Deep-sea mining could supply critical minerals, but its ecological impacts remain poorly understood.",
+          "zh": "深海采矿可能供应关键矿产，但其生态影响仍缺乏充分认识。"
+        }
+      ],
+      "drill": "翻译 precautionary principle。"
+    },
+    {
+      "id": "HX087",
+      "type": "hotspot",
+      "channel": "waste",
+      "title": "电子垃圾回收",
+      "summary": "电子垃圾涉及金属回收、非正规拆解、污染和生产者责任。",
+      "pattern": "e-waste; informal recycling; extended producer responsibility; rare earth recovery",
+      "exam": "循环经济热点。",
+      "trap": "e-waste 有资源和污染双重属性。",
+      "memory": "电子垃圾 = 资源 + 污染风险。",
+      "examples": [
+        {
+          "en": "E-waste recycling can recover valuable metals but may expose workers to toxic substances.",
+          "zh": "电子垃圾回收可以回收有价值金属，但也可能使工人接触有毒物质。"
+        }
+      ],
+      "drill": "翻译 extended producer responsibility。"
+    },
+    {
+      "id": "HX088",
+      "type": "hotspot",
+      "channel": "ai",
+      "title": "AI智能体与责任边界",
+      "summary": "AI agents 可自主调用工具、执行任务，引出责任归属和审计。",
+      "pattern": "AI agents; tool use; audit trail; human oversight; accountability",
+      "exam": "AI治理热点。",
+      "trap": "agent 技术语境常译智能体。",
+      "memory": "智能体 = 自主执行任务的系统。",
+      "examples": [
+        {
+          "en": "AI agents that can take actions on behalf of users require clear accountability mechanisms.",
+          "zh": "能够代表用户采取行动的人工智能智能体需要明确的问责机制。"
+        }
+      ],
+      "drill": "写一句 human oversight。"
+    },
+    {
+      "id": "HX089",
+      "type": "hotspot",
+      "channel": "energy",
+      "title": "数据中心用电与水资源",
+      "summary": "AI训练和云服务推动数据中心能耗、水耗和选址治理议题。",
+      "pattern": "data center; power demand; water consumption; cooling system; grid capacity",
+      "exam": "科技+能源交叉热点。",
+      "trap": "cooling 可译散热/冷却系统。",
+      "memory": "数据中心 = 电力 + 水 + 土地 + 碳。",
+      "examples": [
+        {
+          "en": "The expansion of data centers has placed new pressure on local grids and water resources.",
+          "zh": "数据中心扩张给当地电网和水资源带来了新的压力。"
+        }
+      ],
+      "drill": "翻译 grid capacity。"
+    },
+    {
+      "id": "HX090",
+      "type": "hotspot",
+      "channel": "transport",
+      "title": "低空经济与城市治理",
+      "summary": "无人机物流、eVTOL、空域管理和安全监管构成低空经济语域。",
+      "pattern": "low-altitude economy; eVTOL; airspace management; drone logistics",
+      "exam": "新兴产业热点。",
+      "trap": "low-altitude economy 必要时可解释。",
+      "memory": "低空经济 = 产业 + 空域 + 安全。",
+      "examples": [
+        {
+          "en": "The low-altitude economy requires coordinated rules for airspace management and public safety.",
+          "zh": "低空经济需要空域管理和公共安全方面的协同规则。"
+        }
+      ],
+      "drill": "翻译 urban air mobility。"
+    },
+    {
+      "id": "PRO-L01",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "时态不是时间，而是视角：政策文本为什么常用一般现在",
+      "summary": "一般现在表达制度、规律、事实、常态；现在完成强调过去到现在的结果或延续；过去时用于明确过去时间点。",
+      "pattern": "一般现在表达制度、规律、事实、常态；现在完成强调过去到现在的结果或延续；过去时用于明确过去时间点。",
+      "exam": "综合常考“中文有了但英语不用过去时”；实务常考政策/报告句的稳定时态。",
+      "trap": "把所有“了/已经/将”机械译成 past/perfect/will。",
+      "memory": "制度 = present simple；历程到现在 = present perfect；明确过去 = past simple。",
+      "examples": [
+        {
+          "en": "The policy provides a framework for data governance.",
+          "zh": "该政策为数据治理提供框架。"
+        },
+        {
+          "en": "Over the past decade, renewable capacity has expanded rapidly.",
+          "zh": "过去十年，可再生能源装机容量迅速扩大。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L02",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "名词化与动词化：英译汉要松开，汉译英要收紧",
+      "summary": "英语正式文体常用名词化：implementation / regulation / integration；英译汉可动词化，汉译英可适度名词化。",
+      "pattern": "英语正式文体常用名词化：implementation / regulation / integration；英译汉可动词化，汉译英可适度名词化。",
+      "exam": "实务常见“推动……建设/加强……治理”需要找到核心动词或名词化结构。",
+      "trap": "中文一连串动词都译成 many verbs，导致英文松散。",
+      "memory": "中文动词多，英语名词多；但译文必须自然，不要堆抽象名词。",
+      "examples": [
+        {
+          "en": "The implementation of the agreement requires sustained coordination.",
+          "zh": "落实该协议需要持续协调。"
+        },
+        {
+          "en": "加强海洋保护",
+          "zh": "strengthen marine protection / enhance the protection of marine ecosystems"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L03",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "冠词、复数、不可数：汉译英最容易“像中文英语”",
+      "summary": "a 表示一个类别中的一个；the 表示双方已知/特指/唯一；零冠词表示抽象概念、制度、材料、学科。",
+      "pattern": "a 表示一个类别中的一个；the 表示双方已知/特指/唯一；零冠词表示抽象概念、制度、材料、学科。",
+      "exam": "综合常考 article；实务中常在 development, governance, access, information, evidence 等抽象名词上出错。",
+      "trap": "把“发展”全部译成 developments；把“信息”误作 informations。",
+      "memory": "可数先问“能不能数”；特指先问“读者是否已知”。",
+      "examples": [
+        {
+          "en": "access to education / the access of rural communities to public services",
+          "zh": "受教育机会 / 农村社区获得公共服务的机会"
+        },
+        {
+          "en": "a regulatory framework / the framework adopted last year",
+          "zh": "一个监管框架 / 去年通过的该框架"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L04",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "从句压缩：定语从句、同位语从句、名词性从句怎么翻",
+      "summary": "which/that 后置修饰可前置、拆句或译成“这/该/从而”；that-clause 要判断是内容、结果还是事实。",
+      "pattern": "which/that 后置修饰可前置、拆句或译成“这/该/从而”；that-clause 要判断是内容、结果还是事实。",
+      "exam": "长难句常考多层从句；综合阅读常考先行词指代。",
+      "trap": "所有 which 都译成“它/这”，导致指代不明。",
+      "memory": "先行词→关系→功能：修饰、补充、结果。",
+      "examples": [
+        {
+          "en": "The rules, which were introduced after public consultation, aim to reduce compliance costs.",
+          "zh": "这些规则是在公开咨询后出台的，旨在降低合规成本。"
+        },
+        {
+          "en": "There is growing evidence that marine heatwaves are becoming more frequent.",
+          "zh": "越来越多证据表明，海洋热浪正变得更加频繁。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L05",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "非谓语：翻译时先还原隐含主语和逻辑关系",
+      "summary": "to do 表目的/将来/结果；-ing 表伴随/结果/主动；-ed 表被动/完成；given/based on/driven by 常是压缩状语。",
+      "pattern": "to do 表目的/将来/结果；-ing 表伴随/结果/主动；-ed 表被动/完成；given/based on/driven by 常是压缩状语。",
+      "exam": "综合常考非谓语逻辑主语；实务常考“造成/推动/基于/旨在”。",
+      "trap": "把 leading to 都译成“领导到”；漏译被动关系。",
+      "memory": "非谓语 = 被压缩的从句；先还原，再决定译序。",
+      "examples": [
+        {
+          "en": "Driven by falling launch costs, private space firms are expanding satellite services.",
+          "zh": "在发射成本下降的推动下，私营航天企业正在扩大卫星服务。"
+        },
+        {
+          "en": "The plan aims to reduce plastic leakage into the ocean.",
+          "zh": "该计划旨在减少塑料流入海洋。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L06",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "被动语态：英语客观，中文不一定被动",
+      "summary": "英语被动常用于客观、流程、责任模糊；英译汉可译成主动、无主句或“由……”。汉译英可用 passive 突出对象。",
+      "pattern": "英语被动常用于客观、流程、责任模糊；英译汉可译成主动、无主句或“由……”。汉译英可用 passive 突出对象。",
+      "exam": "实务中“规定/要求/预计/认为”常用被动或形式主语。",
+      "trap": "中文每个“被”都译成 be done；英语每个被动都译成“被”。",
+      "memory": "看焦点：对象重要→被动；行动者重要→主动。",
+      "examples": [
+        {
+          "en": "Neural data must be protected through clear consent mechanisms.",
+          "zh": "必须通过明确的同意机制保护神经数据。"
+        },
+        {
+          "en": "It is widely recognized that climate risks require coordinated action.",
+          "zh": "人们普遍认识到，应对气候风险需要协调行动。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L07",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "信息结构：中文重点常在后，英文重点常先立框架",
+      "summary": "英文常先给主干和判断，再展开条件/原因/背景；中文可先铺垫背景，最后落重点。汉译英要提前主语和谓语。",
+      "pattern": "英文常先给主干和判断，再展开条件/原因/背景；中文可先铺垫背景，最后落重点。汉译英要提前主语和谓语。",
+      "exam": "实务评分看句子是否一眼能读出主干。",
+      "trap": "汉译英照中文顺序铺垫太长，主干迟迟不出现。",
+      "memory": "英文先立柱子，再挂装饰；中文可先铺路，再落结论。",
+      "examples": [
+        {
+          "en": "To improve resilience, cities need integrated planning, reliable data and long-term investment.",
+          "zh": "为提升韧性，城市需要综合规划、可靠数据和长期投资。"
+        },
+        {
+          "en": "在全球供应链调整的背景下，企业需要提高关键环节的自主可控能力。",
+          "zh": "Against the backdrop of global supply-chain restructuring, companies need to strengthen control over key links."
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L08",
+      "type": "grammar",
+      "channel": "系统讲义",
+      "title": "逻辑连接：although / while / whereas / despite 不只是“虽然”",
+      "summary": "although/though 表让步；while 可表时间或对比；whereas 强对比；despite 是介词，后接名词/动名词。",
+      "pattern": "although/though 表让步；while 可表时间或对比；whereas 强对比；despite 是介词，后接名词/动名词。",
+      "exam": "综合阅读和单选常考逻辑反转；实务漏译逻辑关系会影响忠实度。",
+      "trap": "把 while 一律译成“当……时”。",
+      "memory": "连接词先判断关系：让步、对比、时间、条件、目的、因果。",
+      "examples": [
+        {
+          "en": "While AI can improve efficiency, it also raises concerns about accountability.",
+          "zh": "人工智能可以提高效率，但也引发问责方面的担忧。"
+        },
+        {
+          "en": "Despite rapid progress, large-scale deployment remains challenging.",
+          "zh": "尽管进展迅速，大规模部署仍面临挑战。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L09",
+      "type": "term",
+      "channel": "系统讲义",
+      "title": "介词搭配：最容易丢分的“小词系统”",
+      "summary": "access to, impact on, response to, demand for, reliance on, resilience against/to, compatible with, vulnerable to。",
+      "pattern": "access to, impact on, response to, demand for, reliance on, resilience against/to, compatible with, vulnerable to。",
+      "exam": "综合单选与完形高频；实务中影响译文地道度。",
+      "trap": "受中文“对/在/为”影响乱用 to/for/on/in。",
+      "memory": "名词自带方向：access→to；impact→on；demand→for；reliance→on。",
+      "examples": [
+        {
+          "en": "public access to health services",
+          "zh": "公众获得医疗服务的机会"
+        },
+        {
+          "en": "resilience to climate shocks",
+          "zh": "抵御气候冲击的韧性"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L10",
+      "type": "term",
+      "channel": "系统讲义",
+      "title": "程度副词与缓和语：避免过强、过弱、过口语",
+      "summary": "significantly/substantially 明显；considerably 相当；moderately 适度；slightly 小幅；largely 主要；partly 部分；likely/potential 表不确定。",
+      "pattern": "significantly/substantially 明显；considerably 相当；moderately 适度；slightly 小幅；largely 主要；partly 部分；likely/potential 表不确定。",
+      "exam": "阅读理解常用程度限定设陷；实务中关系到准确性。",
+      "trap": "把 largely 译成“大量地”；把 potentially 漏掉导致语气过强。",
+      "memory": "副词 = 精度旋钮；先判断程度，再决定中文强弱。",
+      "examples": [
+        {
+          "en": "The measure could substantially reduce compliance costs.",
+          "zh": "该措施可能显著降低合规成本。"
+        },
+        {
+          "en": "The results are partly attributable to improved monitoring.",
+          "zh": "这些结果部分归因于监测能力提升。"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L11",
+      "type": "term",
+      "channel": "系统讲义",
+      "title": "近义词辨析：promote / advance / foster / drive",
+      "summary": "promote 促进/倡导；advance 推进进程；foster 培育环境/关系；drive 作为主要动力推动。",
+      "pattern": "promote 促进/倡导；advance 推进进程；foster 培育环境/关系；drive 作为主要动力推动。",
+      "exam": "综合词义辨析；实务中用于政策、科技、产业段落。",
+      "trap": "所有“推动”都译成 promote。",
+      "memory": "promote=促；advance=推进行程；foster=培育土壤；drive=提供动力。",
+      "examples": [
+        {
+          "en": "advance high-quality development",
+          "zh": "推进高质量发展"
+        },
+        {
+          "en": "foster an innovation-friendly ecosystem",
+          "zh": "营造有利于创新的生态"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
+    },
+    {
+      "id": "PRO-L12",
+      "type": "term",
+      "channel": "系统讲义",
+      "title": "术语策略：先稳定、再查证、最后统一",
+      "summary": "术语翻译按“官方译法→领域惯例→上下文功能”排序；全文同一概念必须统一。",
+      "pattern": "术语翻译按“官方译法→领域惯例→上下文功能”排序；全文同一概念必须统一。",
+      "exam": "实务中术语不统一会显著影响质量；热点题尤其明显。",
+      "trap": "同一个词一会儿译“治理”、一会儿译“管理”、一会儿译“管控”，没有语义区分。",
+      "memory": "术语表先行；同义表达要有功能差异。",
+      "examples": [
+        {
+          "en": "brain-computer interface / neural data / informed consent",
+          "zh": "脑机接口 / 神经数据 / 知情同意"
+        },
+        {
+          "en": "plastic leakage / circular economy / waste sorting",
+          "zh": "塑料泄漏 / 循环经济 / 垃圾分类"
+        }
+      ],
+      "drill": "用该规则改写/翻译一个相关句子，并核对主干、逻辑、术语和语域。"
     }
   ],
   "longSentences": [
@@ -7117,6 +8783,118 @@ window.CATTI_DATA = {
         ]
       ],
       "translation": "跨境数据流动虽可促进贸易和创新，但需要相应保障措施来保护隐私、安全和正当公共利益。"
+    },
+    {
+      "id": "L011",
+      "title": "神经数据隐私",
+      "source": "As brain-computer interfaces move from laboratory settings into clinical and consumer applications, regulators face the challenge of protecting neural data without slowing responsible innovation.",
+      "translation": "随着脑机接口从实验室场景走向临床和消费应用，监管者面临一项挑战：既要保护神经数据，又不能阻碍负责任的创新。",
+      "layers": [
+        [
+          "主干",
+          "regulators face the challenge"
+        ],
+        [
+          "时间背景",
+          "As brain-computer interfaces move..."
+        ],
+        [
+          "of结构",
+          "protecting neural data 解释 challenge"
+        ],
+        [
+          "without结构",
+          "不能以阻碍创新为代价"
+        ],
+        [
+          "译序",
+          "先背景，再主干，再拆“既要……又不能……”。"
+        ]
+      ]
+    },
+    {
+      "id": "L012",
+      "title": "太空垃圾治理",
+      "source": "Although reusable rockets have reduced launch costs, the rapid deployment of satellite constellations has intensified debates over orbital congestion and long-term space sustainability.",
+      "translation": "尽管可重复使用火箭降低了发射成本，但卫星星座的快速部署加剧了关于轨道拥堵和长期空间可持续性的争论。",
+      "layers": [
+        [
+          "让步",
+          "Although reusable rockets..."
+        ],
+        [
+          "主干",
+          "deployment has intensified debates"
+        ],
+        [
+          "of结构",
+          "of satellite constellations 修饰 deployment"
+        ],
+        [
+          "over结构",
+          "争论议题"
+        ],
+        [
+          "译序",
+          "保留“尽管……但……”转折。"
+        ]
+      ]
+    },
+    {
+      "id": "L013",
+      "title": "深海采矿",
+      "source": "Where scientific uncertainty remains high, many experts argue that decisions on deep-sea mining should be guided by the precautionary principle rather than short-term demand for critical minerals.",
+      "translation": "在科学不确定性仍然较高的情况下，许多专家认为，深海采矿决策应遵循预防原则，而不应受关键矿产短期需求主导。",
+      "layers": [
+        [
+          "条件/场景",
+          "Where scientific uncertainty remains high"
+        ],
+        [
+          "主干",
+          "many experts argue that..."
+        ],
+        [
+          "宾语从句",
+          "decisions should be guided..."
+        ],
+        [
+          "rather than",
+          "不是 A 而是 B"
+        ],
+        [
+          "译序",
+          "先场景，再观点，再处理 rather than。"
+        ]
+      ]
+    },
+    {
+      "id": "L014",
+      "title": "AI智能体",
+      "source": "Because AI agents can initiate actions, call external tools and generate outputs with limited human intervention, accountability must be built into the system rather than added after harm occurs.",
+      "translation": "由于人工智能智能体可以发起行动、调用外部工具，并在有限人工干预下生成输出，问责机制必须内置于系统之中，而不是在损害发生后再补充。",
+      "layers": [
+        [
+          "原因",
+          "Because AI agents can..."
+        ],
+        [
+          "并列谓语",
+          "initiate, call, generate 平行"
+        ],
+        [
+          "主干",
+          "accountability must be built into the system"
+        ],
+        [
+          "rather than",
+          "而不是……"
+        ],
+        [
+          "译序",
+          "原因从句较长，可先译；must 要译出义务强度。"
+        ]
+      ]
     }
   ],
   "quiz": [
@@ -7659,14 +9437,1339 @@ window.CATTI_DATA = {
       ],
       "answer": 0,
       "explain": "rule 规则；regulation 法规；policy 政策；guideline 指南。"
+    },
+    {
+      "id": "Q046",
+      "question": "【搭配】“保护海洋生物多样性”最自然的是？",
+      "options": [
+        "protect marine biodiversity",
+        "protect ocean different lives",
+        "defend sea biology many kinds",
+        "save ocean creatures category"
+      ],
+      "answer": 0,
+      "explain": "固定搭配为 protect marine biodiversity。"
+    },
+    {
+      "id": "Q047",
+      "question": "【介词】access ___ reliable information",
+      "options": [
+        "to",
+        "for",
+        "on",
+        "with"
+      ],
+      "answer": 0,
+      "explain": "access to 是固定搭配。"
+    },
+    {
+      "id": "Q048",
+      "question": "【语域】deal with risks 更正式可用？",
+      "options": [
+        "address risks",
+        "do risks",
+        "make risks",
+        "touch risks"
+      ],
+      "answer": 0,
+      "explain": "address/tackle/mitigate risks 更正式。"
+    },
+    {
+      "id": "Q049",
+      "question": "【长难句】Although 引导的信息通常是？",
+      "options": [
+        "让步背景",
+        "核心结论",
+        "并列结果",
+        "目的"
+      ],
+      "answer": 0,
+      "explain": "although 引导让步，主句通常是核心判断。"
+    },
+    {
+      "id": "Q050",
+      "question": "【热点】space debris mitigation 通常译为？",
+      "options": [
+        "空间碎片治理/缓解",
+        "空间垃圾模仿",
+        "太空尘埃制造",
+        "航天废品交易"
+      ],
+      "answer": 0,
+      "explain": "space debris 是空间碎片。"
     }
   ],
   "meta": {
-    "version": "V5",
+    "version": "V8 restore-enhanced",
     "generated": "2026-06-28",
-    "cardCount": 373,
-    "termCount": 183,
-    "hotspotCount": 80,
-    "grammarCount": 60
-  }
+    "cardCount": 460,
+    "termCount": 222,
+    "hotspotCount": 90,
+    "grammarCount": 90,
+    "synonymCount": 25,
+    "registerCount": 33,
+    "trainingCount": 59,
+    "demoCount": 5
+  },
+  "professionalSyllabus": [
+    {
+      "id": "L01",
+      "title": "时态不是时间，而是视角：政策文本为什么常用一般现在",
+      "category": "语法骨架",
+      "color": "grammar",
+      "rule": "一般现在表达制度、规律、事实、常态；现在完成强调过去到现在的结果或延续；过去时用于明确过去时间点。",
+      "exam": "综合常考“中文有了但英语不用过去时”；实务常考政策/报告句的稳定时态。",
+      "examples": [
+        {
+          "en": "The policy provides a framework for data governance.",
+          "zh": "该政策为数据治理提供框架。"
+        },
+        {
+          "en": "Over the past decade, renewable capacity has expanded rapidly.",
+          "zh": "过去十年，可再生能源装机容量迅速扩大。"
+        }
+      ],
+      "trap": "把所有“了/已经/将”机械译成 past/perfect/will。",
+      "memory": "制度 = present simple；历程到现在 = present perfect；明确过去 = past simple。"
+    },
+    {
+      "id": "L02",
+      "title": "名词化与动词化：英译汉要松开，汉译英要收紧",
+      "category": "语法骨架",
+      "color": "grammar",
+      "rule": "英语正式文体常用名词化：implementation / regulation / integration；英译汉可动词化，汉译英可适度名词化。",
+      "exam": "实务常见“推动……建设/加强……治理”需要找到核心动词或名词化结构。",
+      "examples": [
+        {
+          "en": "The implementation of the agreement requires sustained coordination.",
+          "zh": "落实该协议需要持续协调。"
+        },
+        {
+          "en": "加强海洋保护",
+          "zh": "strengthen marine protection / enhance the protection of marine ecosystems"
+        }
+      ],
+      "trap": "中文一连串动词都译成 many verbs，导致英文松散。",
+      "memory": "中文动词多，英语名词多；但译文必须自然，不要堆抽象名词。"
+    },
+    {
+      "id": "L03",
+      "title": "冠词、复数、不可数：汉译英最容易“像中文英语”",
+      "category": "名词系统",
+      "color": "grammar",
+      "rule": "a 表示一个类别中的一个；the 表示双方已知/特指/唯一；零冠词表示抽象概念、制度、材料、学科。",
+      "exam": "综合常考 article；实务中常在 development, governance, access, information, evidence 等抽象名词上出错。",
+      "examples": [
+        {
+          "en": "access to education / the access of rural communities to public services",
+          "zh": "受教育机会 / 农村社区获得公共服务的机会"
+        },
+        {
+          "en": "a regulatory framework / the framework adopted last year",
+          "zh": "一个监管框架 / 去年通过的该框架"
+        }
+      ],
+      "trap": "把“发展”全部译成 developments；把“信息”误作 informations。",
+      "memory": "可数先问“能不能数”；特指先问“读者是否已知”。"
+    },
+    {
+      "id": "L04",
+      "title": "从句压缩：定语从句、同位语从句、名词性从句怎么翻",
+      "category": "从句系统",
+      "color": "sentence",
+      "rule": "which/that 后置修饰可前置、拆句或译成“这/该/从而”；that-clause 要判断是内容、结果还是事实。",
+      "exam": "长难句常考多层从句；综合阅读常考先行词指代。",
+      "examples": [
+        {
+          "en": "The rules, which were introduced after public consultation, aim to reduce compliance costs.",
+          "zh": "这些规则是在公开咨询后出台的，旨在降低合规成本。"
+        },
+        {
+          "en": "There is growing evidence that marine heatwaves are becoming more frequent.",
+          "zh": "越来越多证据表明，海洋热浪正变得更加频繁。"
+        }
+      ],
+      "trap": "所有 which 都译成“它/这”，导致指代不明。",
+      "memory": "先行词→关系→功能：修饰、补充、结果。"
+    },
+    {
+      "id": "L05",
+      "title": "非谓语：翻译时先还原隐含主语和逻辑关系",
+      "category": "从句系统",
+      "color": "sentence",
+      "rule": "to do 表目的/将来/结果；-ing 表伴随/结果/主动；-ed 表被动/完成；given/based on/driven by 常是压缩状语。",
+      "exam": "综合常考非谓语逻辑主语；实务常考“造成/推动/基于/旨在”。",
+      "examples": [
+        {
+          "en": "Driven by falling launch costs, private space firms are expanding satellite services.",
+          "zh": "在发射成本下降的推动下，私营航天企业正在扩大卫星服务。"
+        },
+        {
+          "en": "The plan aims to reduce plastic leakage into the ocean.",
+          "zh": "该计划旨在减少塑料流入海洋。"
+        }
+      ],
+      "trap": "把 leading to 都译成“领导到”；漏译被动关系。",
+      "memory": "非谓语 = 被压缩的从句；先还原，再决定译序。"
+    },
+    {
+      "id": "L06",
+      "title": "被动语态：英语客观，中文不一定被动",
+      "category": "句法转换",
+      "color": "style",
+      "rule": "英语被动常用于客观、流程、责任模糊；英译汉可译成主动、无主句或“由……”。汉译英可用 passive 突出对象。",
+      "exam": "实务中“规定/要求/预计/认为”常用被动或形式主语。",
+      "examples": [
+        {
+          "en": "Neural data must be protected through clear consent mechanisms.",
+          "zh": "必须通过明确的同意机制保护神经数据。"
+        },
+        {
+          "en": "It is widely recognized that climate risks require coordinated action.",
+          "zh": "人们普遍认识到，应对气候风险需要协调行动。"
+        }
+      ],
+      "trap": "中文每个“被”都译成 be done；英语每个被动都译成“被”。",
+      "memory": "看焦点：对象重要→被动；行动者重要→主动。"
+    },
+    {
+      "id": "L07",
+      "title": "信息结构：中文重点常在后，英文重点常先立框架",
+      "category": "中英对比",
+      "color": "logic",
+      "rule": "英文常先给主干和判断，再展开条件/原因/背景；中文可先铺垫背景，最后落重点。汉译英要提前主语和谓语。",
+      "exam": "实务评分看句子是否一眼能读出主干。",
+      "examples": [
+        {
+          "en": "To improve resilience, cities need integrated planning, reliable data and long-term investment.",
+          "zh": "为提升韧性，城市需要综合规划、可靠数据和长期投资。"
+        },
+        {
+          "en": "在全球供应链调整的背景下，企业需要提高关键环节的自主可控能力。",
+          "zh": "Against the backdrop of global supply-chain restructuring, companies need to strengthen control over key links."
+        }
+      ],
+      "trap": "汉译英照中文顺序铺垫太长，主干迟迟不出现。",
+      "memory": "英文先立柱子，再挂装饰；中文可先铺路，再落结论。"
+    },
+    {
+      "id": "L08",
+      "title": "逻辑连接：although / while / whereas / despite 不只是“虽然”",
+      "category": "逻辑系统",
+      "color": "logic",
+      "rule": "although/though 表让步；while 可表时间或对比；whereas 强对比；despite 是介词，后接名词/动名词。",
+      "exam": "综合阅读和单选常考逻辑反转；实务漏译逻辑关系会影响忠实度。",
+      "examples": [
+        {
+          "en": "While AI can improve efficiency, it also raises concerns about accountability.",
+          "zh": "人工智能可以提高效率，但也引发问责方面的担忧。"
+        },
+        {
+          "en": "Despite rapid progress, large-scale deployment remains challenging.",
+          "zh": "尽管进展迅速，大规模部署仍面临挑战。"
+        }
+      ],
+      "trap": "把 while 一律译成“当……时”。",
+      "memory": "连接词先判断关系：让步、对比、时间、条件、目的、因果。"
+    },
+    {
+      "id": "L09",
+      "title": "介词搭配：最容易丢分的“小词系统”",
+      "category": "词汇搭配",
+      "color": "vocab",
+      "rule": "access to, impact on, response to, demand for, reliance on, resilience against/to, compatible with, vulnerable to。",
+      "exam": "综合单选与完形高频；实务中影响译文地道度。",
+      "examples": [
+        {
+          "en": "public access to health services",
+          "zh": "公众获得医疗服务的机会"
+        },
+        {
+          "en": "resilience to climate shocks",
+          "zh": "抵御气候冲击的韧性"
+        }
+      ],
+      "trap": "受中文“对/在/为”影响乱用 to/for/on/in。",
+      "memory": "名词自带方向：access→to；impact→on；demand→for；reliance→on。"
+    },
+    {
+      "id": "L10",
+      "title": "程度副词与缓和语：避免过强、过弱、过口语",
+      "category": "词汇搭配",
+      "color": "vocab",
+      "rule": "significantly/substantially 明显；considerably 相当；moderately 适度；slightly 小幅；largely 主要；partly 部分；likely/potential 表不确定。",
+      "exam": "阅读理解常用程度限定设陷；实务中关系到准确性。",
+      "examples": [
+        {
+          "en": "The measure could substantially reduce compliance costs.",
+          "zh": "该措施可能显著降低合规成本。"
+        },
+        {
+          "en": "The results are partly attributable to improved monitoring.",
+          "zh": "这些结果部分归因于监测能力提升。"
+        }
+      ],
+      "trap": "把 largely 译成“大量地”；把 potentially 漏掉导致语气过强。",
+      "memory": "副词 = 精度旋钮；先判断程度，再决定中文强弱。"
+    },
+    {
+      "id": "L11",
+      "title": "近义词辨析：promote / advance / foster / drive",
+      "category": "词义辨析",
+      "color": "vocab",
+      "rule": "promote 促进/倡导；advance 推进进程；foster 培育环境/关系；drive 作为主要动力推动。",
+      "exam": "综合词义辨析；实务中用于政策、科技、产业段落。",
+      "examples": [
+        {
+          "en": "advance high-quality development",
+          "zh": "推进高质量发展"
+        },
+        {
+          "en": "foster an innovation-friendly ecosystem",
+          "zh": "营造有利于创新的生态"
+        }
+      ],
+      "trap": "所有“推动”都译成 promote。",
+      "memory": "promote=促；advance=推进行程；foster=培育土壤；drive=提供动力。"
+    },
+    {
+      "id": "L12",
+      "title": "术语策略：先稳定、再查证、最后统一",
+      "category": "考试方法",
+      "color": "domain",
+      "rule": "术语翻译按“官方译法→领域惯例→上下文功能”排序；全文同一概念必须统一。",
+      "exam": "实务中术语不统一会显著影响质量；热点题尤其明显。",
+      "examples": [
+        {
+          "en": "brain-computer interface / neural data / informed consent",
+          "zh": "脑机接口 / 神经数据 / 知情同意"
+        },
+        {
+          "en": "plastic leakage / circular economy / waste sorting",
+          "zh": "塑料泄漏 / 循环经济 / 垃圾分类"
+        }
+      ],
+      "trap": "同一个词一会儿译“治理”、一会儿译“管理”、一会儿译“管控”，没有语义区分。",
+      "memory": "术语表先行；同义表达要有功能差异。"
+    }
+  ],
+  "trainingBank": [
+    {
+      "id": "C01",
+      "type": "choice",
+      "topic": "grammar",
+      "prompt": "Which option best translates “近年来，全球对脑机接口的监管关注不断上升”？",
+      "options": [
+        "In recent years, global regulatory attention to brain-computer interfaces has been increasing.",
+        "Recently, the world to brain-computer interfaces regulation attention rise.",
+        "In recent years, global attention has rose about brain-machine interface regulation.",
+        "The global regulation care for BCI is more and more."
+      ],
+      "answer": 0,
+      "explain": "现在完成进行/现在完成可表达“近年来一直上升”；attention to 是固定搭配。",
+      "reference": "In recent years, global regulatory attention to brain-computer interfaces has been increasing.",
+      "keywords": [],
+      "trap": "现在完成进行/现在完成可表达“近年来一直上升”；attention to 是固定搭配。"
+    },
+    {
+      "id": "C02",
+      "type": "choice",
+      "topic": "logic",
+      "prompt": "In “While private space companies can lower launch costs, they may also intensify concerns over space debris,” while 表示什么？",
+      "options": [
+        "时间：当……时",
+        "对比/让步：虽然/尽管",
+        "目的：为了",
+        "结果：因此"
+      ],
+      "answer": 1,
+      "explain": "while 在政策评论中常表对比或让步，不应机械译为“当”。",
+      "reference": "对比/让步：虽然/尽管",
+      "keywords": [],
+      "trap": "while 在政策评论中常表对比或让步，不应机械译为“当”。"
+    },
+    {
+      "id": "C03",
+      "type": "choice",
+      "topic": "vocab",
+      "prompt": "“缓解气候风险”最稳妥的表达是？",
+      "options": [
+        "relieve climate risk",
+        "mitigate climate risks",
+        "heal climate risks",
+        "loosen climate risks"
+      ],
+      "answer": 1,
+      "explain": "mitigate risks/impacts 是标准搭配。relieve 多用于痛苦、压力；heal 不搭配 risk。",
+      "reference": "mitigate climate risks",
+      "keywords": [],
+      "trap": "mitigate risks/impacts 是标准搭配。relieve 多用于痛苦、压力；heal 不搭配 risk。"
+    },
+    {
+      "id": "C04",
+      "type": "choice",
+      "topic": "grammar",
+      "prompt": "“公众获得医疗服务的机会”中 “获得……的机会”常译为：",
+      "options": [
+        "access to health services",
+        "access of health services",
+        "approach to health services",
+        "entrance for health services"
+      ],
+      "answer": 0,
+      "explain": "access to 是固定搭配；approach to 是方法/途径，不等于获得机会。",
+      "reference": "access to health services",
+      "keywords": [],
+      "trap": "access to 是固定搭配；approach to 是方法/途径，不等于获得机会。"
+    },
+    {
+      "id": "C05",
+      "type": "choice",
+      "topic": "style",
+      "prompt": "“deal with the problem”在正式笔译中更适合改为：",
+      "options": [
+        "play with the problem",
+        "address/tackle the challenge",
+        "do the thing",
+        "make the problem gone"
+      ],
+      "answer": 1,
+      "explain": "address/tackle challenges 更正式；problem 可按语境改成 challenge/issue/risk。",
+      "reference": "address/tackle the challenge",
+      "keywords": [],
+      "trap": "address/tackle challenges 更正式；problem 可按语境改成 challenge/issue/risk。"
+    },
+    {
+      "id": "C06",
+      "type": "choice",
+      "topic": "grammar",
+      "prompt": "Despite 后面通常接：",
+      "options": [
+        "完整句子",
+        "名词/名词短语/动名词",
+        "will + 动词",
+        "because 从句"
+      ],
+      "answer": 1,
+      "explain": "despite 是介词，后接名词性结构；although 才接从句。",
+      "reference": "名词/名词短语/动名词",
+      "keywords": [],
+      "trap": "despite 是介词，后接名词性结构；although 才接从句。"
+    },
+    {
+      "id": "C07",
+      "type": "choice",
+      "topic": "reading",
+      "prompt": "阅读题中 “largely driven by falling costs” 的 largely 最接近：",
+      "options": [
+        "完全",
+        "主要地/很大程度上",
+        "偶然地",
+        "轻微地"
+      ],
+      "answer": 1,
+      "explain": "largely 是程度副词，常译为“主要/很大程度上”。",
+      "reference": "主要地/很大程度上",
+      "keywords": [],
+      "trap": "largely 是程度副词，常译为“主要/很大程度上”。"
+    },
+    {
+      "id": "C08",
+      "type": "choice",
+      "topic": "vocab",
+      "prompt": "“加强问责”更自然的是：",
+      "options": [
+        "strengthen accountability",
+        "strong accountability",
+        "make accountability big",
+        "increase responsible"
+      ],
+      "answer": 0,
+      "explain": "strengthen/enhance accountability 是政策语域常见表达。",
+      "reference": "strengthen accountability",
+      "keywords": [],
+      "trap": "strengthen/enhance accountability 是政策语域常见表达。"
+    },
+    {
+      "id": "T01",
+      "type": "short",
+      "topic": "AI治理",
+      "prompt": "随着人工智能系统越来越多地用于公共服务，需要建立更清晰的问责机制。",
+      "reference": "As artificial intelligence systems are increasingly used in public services, clearer accountability mechanisms need to be established.",
+      "keywords": [
+        "AI systems",
+        "public services",
+        "accountability mechanisms"
+      ],
+      "trap": "不要把“问责机制”译成 responsibility machine；注意被动/无主句。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T02",
+      "type": "short",
+      "topic": "火星与航天",
+      "prompt": "商业航天企业正在通过可重复使用火箭降低发射成本。",
+      "reference": "Commercial space companies are reducing launch costs through reusable rockets.",
+      "keywords": [
+        "commercial space companies",
+        "launch costs",
+        "reusable rockets"
+      ],
+      "trap": "commercial space 不要译成 business sky；through 表方式。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T03",
+      "type": "short",
+      "topic": "脑机接口",
+      "prompt": "脑机接口可能为神经系统疾病患者提供新的治疗选择，但也带来隐私和伦理风险。",
+      "reference": "Brain-computer interfaces may offer new treatment options for patients with neurological disorders, but they also raise privacy and ethical risks.",
+      "keywords": [
+        "brain-computer interfaces",
+        "treatment options",
+        "privacy",
+        "ethical risks"
+      ],
+      "trap": "may 不能漏；raise risks/concerns 是搭配。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T04",
+      "type": "short",
+      "topic": "海洋保护",
+      "prompt": "减少塑料流入海洋需要从生产、消费和废弃物管理三个环节同时发力。",
+      "reference": "Reducing plastic leakage into the ocean requires action across production, consumption and waste management.",
+      "keywords": [
+        "plastic leakage",
+        "ocean",
+        "production",
+        "consumption",
+        "waste management"
+      ],
+      "trap": "“发力”不宜直译 force；requires action across... 更稳。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T05",
+      "type": "short",
+      "topic": "生物安全",
+      "prompt": "加强病原体监测有助于提高公共卫生系统的早期预警能力。",
+      "reference": "Strengthening pathogen surveillance can improve the early-warning capacity of public health systems.",
+      "keywords": [
+        "pathogen surveillance",
+        "early-warning capacity",
+        "public health systems"
+      ],
+      "trap": "surveillance 在公共卫生中常译“监测”，不是监视。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T06",
+      "type": "short",
+      "topic": "垃圾治理",
+      "prompt": "垃圾分类制度能提高资源回收效率，并减少填埋场压力。",
+      "reference": "Waste sorting systems can improve resource-recycling efficiency and reduce pressure on landfills.",
+      "keywords": [
+        "waste sorting",
+        "resource-recycling",
+        "landfills"
+      ],
+      "trap": "landfill 是填埋场；efficiency 不要漏。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T07",
+      "type": "short",
+      "topic": "数据中心",
+      "prompt": "数据中心能耗上升使绿色电力和高效冷却技术更加重要。",
+      "reference": "Rising energy consumption in data centers makes green electricity and efficient cooling technologies more important.",
+      "keywords": [
+        "data centers",
+        "energy consumption",
+        "green electricity",
+        "cooling technologies"
+      ],
+      "trap": "主语可名词化：Rising energy consumption... makes...。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "T08",
+      "type": "short",
+      "topic": "书面表达",
+      "prompt": "该措施不仅降低企业合规成本，也提高了监管透明度。",
+      "reference": "The measure not only reduces compliance costs for companies but also improves regulatory transparency.",
+      "keywords": [
+        "not only",
+        "compliance costs",
+        "regulatory transparency"
+      ],
+      "trap": "not only...but also 平行结构要一致。",
+      "explain": "按关键词、逻辑关系、数字/否定、语域四项评分。"
+    },
+    {
+      "id": "R01",
+      "type": "reading",
+      "topic": "阅读理解",
+      "passage": "Private launch companies have reduced the cost of access to orbit, largely through reusable rockets. However, the rapid growth of satellite constellations has intensified concerns about orbital congestion and space debris.",
+      "prompt": "What is the main contrast in the passage?",
+      "options": [
+        "Reusable rockets are impossible to regulate.",
+        "Lower launch costs coexist with growing debris-related concerns.",
+        "Satellite constellations have ended space exploration.",
+        "Orbit access is unrelated to private firms."
+      ],
+      "answer": 1,
+      "reference": "Lower launch costs coexist with growing debris-related concerns.",
+      "explain": "main contrast = 成本下降 vs 空间碎片/轨道拥堵风险上升。",
+      "keywords": [],
+      "trap": "main contrast = 成本下降 vs 空间碎片/轨道拥堵风险上升。"
+    },
+    {
+      "id": "R02",
+      "type": "reading",
+      "topic": "阅读理解",
+      "passage": "Brain-computer interfaces may help patients restore communication or mobility. Yet the collection of neural data raises questions about consent, security and the boundaries between medical treatment and human enhancement.",
+      "prompt": "Which issue is NOT mentioned?",
+      "options": [
+        "Informed consent",
+        "Data security",
+        "Ocean pollution",
+        "Human enhancement"
+      ],
+      "answer": 2,
+      "reference": "Ocean pollution",
+      "explain": "段落提到 consent, security, treatment/enhancement，没有 ocean pollution。",
+      "keywords": [],
+      "trap": "段落提到 consent, security, treatment/enhancement，没有 ocean pollution。"
+    },
+    {
+      "id": "R03",
+      "type": "reading",
+      "topic": "阅读理解",
+      "passage": "Marine plastic pollution is not only a waste-management problem. It is linked to product design, consumption patterns, recycling capacity and international trade in plastic products.",
+      "prompt": "What does the passage imply?",
+      "options": [
+        "The issue should be handled across the product life cycle.",
+        "Only beach cleanups are needed.",
+        "International trade has no relevance.",
+        "Plastic pollution is purely natural."
+      ],
+      "answer": 0,
+      "reference": "The issue should be handled across the product life cycle.",
+      "explain": "not only waste management + product design/consumption/recycling/trade = 生命周期治理。",
+      "keywords": [],
+      "trap": "not only waste management + product design/consumption/recycling/trade = 生命周期治理。"
+    },
+    {
+      "id": "R04",
+      "type": "reading",
+      "topic": "阅读理解",
+      "passage": "In public-sector AI systems, transparency is not simply a technical feature. It also requires explainable procedures, clear responsibility and channels for citizens to challenge decisions.",
+      "prompt": "Transparency here includes:",
+      "options": [
+        "Only faster algorithms",
+        "Procedures, responsibility and appeal channels",
+        "More secret data collection",
+        "Replacing public services"
+      ],
+      "answer": 1,
+      "reference": "Procedures, responsibility and appeal channels",
+      "explain": "transparent governance 包含程序可解释、责任清晰、申诉渠道。",
+      "keywords": [],
+      "trap": "transparent governance 包含程序可解释、责任清晰、申诉渠道。"
+    },
+    {
+      "id": "K01",
+      "type": "cloze",
+      "topic": "介词搭配",
+      "prompt": "Public ______ health services remains uneven across regions.",
+      "reference": "access to",
+      "keywords": [
+        "access to"
+      ],
+      "explain": "access to services = 获得服务的机会。",
+      "trap": "access to services = 获得服务的机会。"
+    },
+    {
+      "id": "K02",
+      "type": "cloze",
+      "topic": "介词搭配",
+      "prompt": "The agreement aims to build resilience ______ climate shocks.",
+      "reference": "to / against",
+      "keywords": [
+        "resilience to",
+        "resilience against"
+      ],
+      "explain": "resilience to/against shocks 均常见。",
+      "trap": "resilience to/against shocks 均常见。"
+    },
+    {
+      "id": "K03",
+      "type": "cloze",
+      "topic": "逻辑搭配",
+      "prompt": "______ rapid progress, large-scale deployment remains difficult.",
+      "reference": "Despite",
+      "keywords": [
+        "Despite"
+      ],
+      "explain": "despite + 名词短语/动名词，表示让步。",
+      "trap": "despite + 名词短语/动名词，表示让步。"
+    },
+    {
+      "id": "K04",
+      "type": "cloze",
+      "topic": "动词搭配",
+      "prompt": "Governments need to ______ concerns about data privacy.",
+      "reference": "address",
+      "keywords": [
+        "address concerns"
+      ],
+      "explain": "address concerns/issues/challenges。",
+      "trap": "address concerns/issues/challenges。"
+    },
+    {
+      "id": "K05",
+      "type": "cloze",
+      "topic": "程度副词",
+      "prompt": "The policy could ______ reduce compliance costs.",
+      "reference": "substantially / significantly",
+      "keywords": [
+        "substantially reduce",
+        "significantly reduce"
+      ],
+      "explain": "显著降低 = substantially/significantly reduce。",
+      "trap": "显著降低 = substantially/significantly reduce。"
+    },
+    {
+      "id": "E01",
+      "type": "error",
+      "topic": "改错润色",
+      "prompt": "In recent years, the attention about brain-computer interface regulation has rose quickly.",
+      "reference": "In recent years, attention to the regulation of brain-computer interfaces has risen rapidly.",
+      "keywords": [
+        "attention to",
+        "has risen",
+        "brain-computer interfaces"
+      ],
+      "explain": "about 搭配错；has rose 应为 has risen；复数 interfaces。",
+      "trap": "about 搭配错；has rose 应为 has risen；复数 interfaces。"
+    },
+    {
+      "id": "E02",
+      "type": "error",
+      "topic": "改错润色",
+      "prompt": "Although AI can improve efficiency, but it also brings accountability risks.",
+      "reference": "Although AI can improve efficiency, it also creates accountability risks.",
+      "keywords": [
+        "Although",
+        "accountability risks"
+      ],
+      "explain": "although 与 but 不连用；bring risks 可改 creates/raises risks。",
+      "trap": "although 与 but 不连用；bring risks 可改 creates/raises risks。"
+    },
+    {
+      "id": "E03",
+      "type": "error",
+      "topic": "改错润色",
+      "prompt": "The government should make more strong governance for plastic pollution.",
+      "reference": "The government should strengthen governance of plastic pollution.",
+      "keywords": [
+        "strengthen governance",
+        "plastic pollution"
+      ],
+      "explain": "make more strong 不自然；governance of/over。",
+      "trap": "make more strong 不自然；governance of/over。"
+    },
+    {
+      "id": "E04",
+      "type": "error",
+      "topic": "改错润色",
+      "prompt": "Space companies reduce the cost by reusable rockets.",
+      "reference": "Space companies reduce costs through the use of reusable rockets.",
+      "keywords": [
+        "reduce costs",
+        "through",
+        "reusable rockets"
+      ],
+      "explain": "by 后可接动名词；through the use of 更正式。",
+      "trap": "by 后可接动名词；through the use of 更正式。"
+    },
+    {
+      "id": "QXQ001",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【时态：一般现在】下列规则最关键的是？",
+      "options": [
+        "制度/规律/稳定事实通常用一般现在；政策文本尤其常见。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "制度/规律/稳定事实通常用一般现在；政策文本尤其常见。",
+      "explain": "把中文“将/正在”机械翻成 will / be doing；制度性句子常用一般现在。",
+      "keywords": [],
+      "trap": "把中文“将/正在”机械翻成 will / be doing；制度性句子常用一般现在。"
+    },
+    {
+      "id": "QXQ002",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【时态：现在完成】下列规则最关键的是？",
+      "options": [
+        "过去发生，但重点在“对现在的影响/延续到现在”。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "过去发生，但重点在“对现在的影响/延续到现在”。",
+      "explain": "不要把所有“已经”都译成 present perfect；若明确过去时间，用一般过去。",
+      "keywords": [],
+      "trap": "不要把所有“已经”都译成 present perfect；若明确过去时间，用一般过去。"
+    },
+    {
+      "id": "QXQ003",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【时态：过去完成】下列规则最关键的是？",
+      "options": [
+        "表示过去时间点之前已经完成的动作。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "表示过去时间点之前已经完成的动作。",
+      "explain": "没有两个过去层级时不要滥用 had done。",
+      "keywords": [],
+      "trap": "没有两个过去层级时不要滥用 had done。"
+    },
+    {
+      "id": "QXQ004",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【时态：将来表达】下列规则最关键的是？",
+      "options": [
+        "will 表预测/承诺；be going to 表计划趋势；be expected to 表官方预测。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "will 表预测/承诺；be going to 表计划趋势；be expected to 表官方预测。",
+      "explain": "政策文件中少用口语化 going to。",
+      "keywords": [],
+      "trap": "政策文件中少用口语化 going to。"
+    },
+    {
+      "id": "QXQ005",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【被动语态】下列规则最关键的是？",
+      "options": [
+        "英语常用被动突出制度、措施、结果；汉语可译为主动或无主句。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "英语常用被动突出制度、措施、结果；汉语可译为主动或无主句。",
+      "explain": "英译汉不必每个被动都译“被”。",
+      "keywords": [],
+      "trap": "英译汉不必每个被动都译“被”。"
+    },
+    {
+      "id": "QXQ006",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【名词化】下列规则最关键的是？",
+      "options": [
+        "正式英语常把动作压缩为名词，但过度名词化会笨重。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "正式英语常把动作压缩为名词，但过度名词化会笨重。",
+      "explain": "汉译英可用名词化提正式度；英译汉可还原为动词。",
+      "keywords": [],
+      "trap": "汉译英可用名词化提正式度；英译汉可还原为动词。"
+    },
+    {
+      "id": "QXQ007",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【冠词：泛指与特指】下列规则最关键的是？",
+      "options": [
+        "a/an 表一个类别成员；the 表双方已知或唯一。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "a/an 表一个类别成员；the 表双方已知或唯一。",
+      "explain": "technology, society, nature 等抽象名词通常不加 the，除非被限定。",
+      "keywords": [],
+      "trap": "technology, society, nature 等抽象名词通常不加 the，除非被限定。"
+    },
+    {
+      "id": "QXQ008",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【复数：抽象名词可数化】下列规则最关键的是？",
+      "options": [
+        "development, policy, challenge 可在具体语境中复数化。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "development, policy, challenge 可在具体语境中复数化。",
+      "explain": "information, equipment, evidence 通常不可数。",
+      "keywords": [],
+      "trap": "information, equipment, evidence 通常不可数。"
+    },
+    {
+      "id": "QXQ009",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【主谓一致】下列规则最关键的是？",
+      "options": [
+        "真正主语决定动词，不被插入语和介词短语误导。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "真正主语决定动词，不被插入语和介词短语误导。",
+      "explain": "along with, together with 不改变主语数。",
+      "keywords": [],
+      "trap": "along with, together with 不改变主语数。"
+    },
+    {
+      "id": "QXQ010",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【there be 结构】下列规则最关键的是？",
+      "options": [
+        "用于引出新信息，但正式文本中可换成 exist / remain / emerge。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "用于引出新信息，但正式文本中可换成 exist / remain / emerge。",
+      "explain": "不要把所有“有”都译 there be；可用 have, feature, involve, include。",
+      "keywords": [],
+      "trap": "不要把所有“有”都译 there be；可用 have, feature, involve, include。"
+    },
+    {
+      "id": "QXQ011",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【名词性从句】下列规则最关键的是？",
+      "options": [
+        "that/what/whether 引导主语、宾语、表语、同位语从句。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "that/what/whether 引导主语、宾语、表语、同位语从句。",
+      "explain": "what = the thing that；that 不作成分。",
+      "keywords": [],
+      "trap": "what = the thing that；that 不作成分。"
+    },
+    {
+      "id": "QXQ012",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【定语从句：限定/非限定】下列规则最关键的是？",
+      "options": [
+        "限定性定义对象；非限定性补充说明。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "限定性定义对象；非限定性补充说明。",
+      "explain": "逗号 which 不能随意译成“这”。",
+      "keywords": [],
+      "trap": "逗号 which 不能随意译成“这”。"
+    },
+    {
+      "id": "QXQ013",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【同位语从句】下列规则最关键的是？",
+      "options": [
+        "解释抽象名词：fact, idea, evidence, possibility, concern。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "解释抽象名词：fact, idea, evidence, possibility, concern。",
+      "explain": "不要误判为定语从句；that 不作成分。",
+      "keywords": [],
+      "trap": "不要误判为定语从句；that 不作成分。"
+    },
+    {
+      "id": "QXQ014",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【状语从句：让步】下列规则最关键的是？",
+      "options": [
+        "although/while/even if 引导反预期关系。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "although/while/even if 引导反预期关系。",
+      "explain": "while 也可表示对比，不一定是“当……时”。",
+      "keywords": [],
+      "trap": "while 也可表示对比，不一定是“当……时”。"
+    },
+    {
+      "id": "QXQ015",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【状语从句：条件】下列规则最关键的是？",
+      "options": [
+        "if/provided that/unless/as long as 表条件；汉译英避免一串 if。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "if/provided that/unless/as long as 表条件；汉译英避免一串 if。",
+      "explain": "unless = if not；不要重复否定。",
+      "keywords": [],
+      "trap": "unless = if not；不要重复否定。"
+    },
+    {
+      "id": "QXQ016",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【非谓语：现在分词】下列规则最关键的是？",
+      "options": [
+        "-ing 常表示主动、伴随、原因或结果。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "-ing 常表示主动、伴随、原因或结果。",
+      "explain": "不要见 -ing 就译“正在”。",
+      "keywords": [],
+      "trap": "不要见 -ing 就译“正在”。"
+    },
+    {
+      "id": "QXQ017",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【非谓语：过去分词】下列规则最关键的是？",
+      "options": [
+        "-ed 常表示被动、完成或状态。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "-ed 常表示被动、完成或状态。",
+      "explain": "不要把过去分词误作谓语。",
+      "keywords": [],
+      "trap": "不要把过去分词误作谓语。"
+    },
+    {
+      "id": "QXQ018",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【不定式】下列规则最关键的是？",
+      "options": [
+        "to do 常表示目的、结果、倾向或未来动作。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "to do 常表示目的、结果、倾向或未来动作。",
+      "explain": "be designed to 不一定译“被设计去”，可译“旨在”。",
+      "keywords": [],
+      "trap": "be designed to 不一定译“被设计去”，可译“旨在”。"
+    },
+    {
+      "id": "QXQ019",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【独立主格】下列规则最关键的是？",
+      "options": [
+        "名词/代词 + 分词/形容词/介词短语，表示背景或伴随。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "名词/代词 + 分词/形容词/介词短语，表示背景或伴随。",
+      "explain": "中文可译为“在……情况下”。",
+      "keywords": [],
+      "trap": "中文可译为“在……情况下”。"
+    },
+    {
+      "id": "QXQ020",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【介词：access to】下列规则最关键的是？",
+      "options": [
+        "access 与 to 搭配，表示获得机会、使用权、接入。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "access 与 to 搭配，表示获得机会、使用权、接入。",
+      "explain": "不要写 access of。",
+      "keywords": [],
+      "trap": "不要写 access of。"
+    },
+    {
+      "id": "QXQ021",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【介词：impact on】下列规则最关键的是？",
+      "options": [
+        "impact/effect/influence 多与 on 搭配。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "impact/effect/influence 多与 on 搭配。",
+      "explain": "affect 是动词，不加 on；have an impact on 才加。",
+      "keywords": [],
+      "trap": "affect 是动词，不加 on；have an impact on 才加。"
+    },
+    {
+      "id": "QXQ022",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【介词：approach to】下列规则最关键的是？",
+      "options": [
+        "approach 作“方法”时接 to + 名词/动名词。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "approach 作“方法”时接 to + 名词/动名词。",
+      "explain": "不要写 approach of。",
+      "keywords": [],
+      "trap": "不要写 approach of。"
+    },
+    {
+      "id": "QXQ023",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【介词：be responsible for/to】下列规则最关键的是？",
+      "options": [
+        "for 表负责事项；to 表对谁负责。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "for 表负责事项；to 表对谁负责。",
+      "explain": "responsible to the environment 不自然，常说 responsible for environmental protection。",
+      "keywords": [],
+      "trap": "responsible to the environment 不自然，常说 responsible for environmental protection。"
+    },
+    {
+      "id": "QXQ024",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【程度副词】下列规则最关键的是？",
+      "options": [
+        "副词决定语气强度：significantly/substantially/slightly/barely。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "副词决定语气强度：significantly/substantially/slightly/barely。",
+      "explain": "very 不适合正式高频；根据证据强度选副词。",
+      "keywords": [],
+      "trap": "very 不适合正式高频；根据证据强度选副词。"
+    },
+    {
+      "id": "QXQ025",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【否定转移】下列规则最关键的是？",
+      "options": [
+        "think/believe/expect 等动词常出现否定转移。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "think/believe/expect 等动词常出现否定转移。",
+      "explain": "不要机械译“专家不认为”。",
+      "keywords": [],
+      "trap": "不要机械译“专家不认为”。"
+    },
+    {
+      "id": "QXQ026",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【部分否定】下列规则最关键的是？",
+      "options": [
+        "not all / not every / not necessarily 表部分否定。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "not all / not every / not necessarily 表部分否定。",
+      "explain": "不能译成“所有都不”。",
+      "keywords": [],
+      "trap": "不能译成“所有都不”。"
+    },
+    {
+      "id": "QXQ027",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【比较结构】下列规则最关键的是？",
+      "options": [
+        "more than 数字是“超过”；more than + adj/noun 可表示“不只是”。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "more than 数字是“超过”；more than + adj/noun 可表示“不只是”。",
+      "explain": "no more than=仅仅；not more than=不超过。",
+      "keywords": [],
+      "trap": "no more than=仅仅；not more than=不超过。"
+    },
+    {
+      "id": "QXQ028",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【as...as 结构】下列规则最关键的是？",
+      "options": [
+        "as much as 可表示“多达”；as long as 可表示“只要”。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "as much as 可表示“多达”；as long as 可表示“只要”。",
+      "explain": "不要把 as long as 全译“和……一样长”。",
+      "keywords": [],
+      "trap": "不要把 as long as 全译“和……一样长”。"
+    },
+    {
+      "id": "QXQ029",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【强调结构】下列规则最关键的是？",
+      "options": [
+        "It is/was ... that/who ... 用于突出成分。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "It is/was ... that/who ... 用于突出成分。",
+      "explain": "注意 not A but B 的重心在 B。",
+      "keywords": [],
+      "trap": "注意 not A but B 的重心在 B。"
+    },
+    {
+      "id": "QXQ030",
+      "type": "choice",
+      "topic": "综合能力",
+      "prompt": "【倒装结构】下列规则最关键的是？",
+      "options": [
+        "否定副词或地点状语前置可倒装。",
+        "所有中文“了”都译成过去时",
+        "正式英语只能用被动语态",
+        "所有抽象名词都必须加 the"
+      ],
+      "answer": 0,
+      "reference": "否定副词或地点状语前置可倒装。",
+      "explain": "not only 后要部分倒装。",
+      "keywords": [],
+      "trap": "not only 后要部分倒装。"
+    }
+  ],
+  "demoBank": [
+    {
+      "id": "D01",
+      "title": "示范：中文政策句怎样变成英语主干",
+      "source": "在数字经济快速发展的背景下，各国需要完善数据治理规则，以平衡创新、效率与个人信息保护。",
+      "answer": "Against the backdrop of the rapid development of the digital economy, countries need to improve data-governance rules to balance innovation, efficiency and personal-information protection.",
+      "steps": [
+        "先定主干：countries need to improve rules",
+        "背景前置：Against the backdrop of...",
+        "目的后置：to balance...",
+        "术语稳定：data-governance rules / personal-information protection"
+      ],
+      "why": "中文先铺背景，英文可以用介词短语先框定背景，再尽快给出主谓宾。"
+    },
+    {
+      "id": "D02",
+      "title": "示范：英文长句拆成中文自然句",
+      "source": "Although reusable rockets have lowered launch costs, the expansion of satellite constellations has raised concerns about orbital congestion, debris mitigation and the long-term sustainability of space activities.",
+      "answer": "尽管可重复使用火箭降低了发射成本，卫星星座的扩张也引发了人们对轨道拥堵、碎片减缓以及空间活动长期可持续性的担忧。",
+      "steps": [
+        "Although = 让步，不译成“当”",
+        "主干1：rockets have lowered costs",
+        "主干2：expansion has raised concerns",
+        "about 后三个并列名词要完整保留"
+      ],
+      "why": "此句不是难在词，而是难在并列名词和逻辑反转。"
+    },
+    {
+      "id": "D03",
+      "title": "示范：脑机接口热点的术语与语气",
+      "source": "脑机接口可能改善部分患者的沟通能力，但神经数据的收集和使用必须受到严格监管。",
+      "answer": "Brain-computer interfaces may improve communication for some patients, but the collection and use of neural data must be strictly regulated.",
+      "steps": [
+        "may 保留不确定性",
+        "communication for patients 比 communication ability 更自然",
+        "collection and use 并列",
+        "must be strictly regulated 用被动突出对象"
+      ],
+      "why": "科技医学语域要避免绝对化，同时保留伦理监管的强制性。"
+    },
+    {
+      "id": "D04",
+      "title": "示范：海洋塑料污染的生命周期表达",
+      "source": "治理海洋塑料污染不能只依赖末端清理，还必须改变产品设计、消费方式和回收体系。",
+      "answer": "Efforts to tackle marine plastic pollution cannot rely solely on end-of-pipe cleanup; they must also change product design, consumption patterns and recycling systems.",
+      "steps": [
+        "治理 = efforts to tackle / governance of",
+        "不能只依赖 = cannot rely solely on",
+        "末端清理 = end-of-pipe cleanup",
+        "三项并列保持词性一致"
+      ],
+      "why": "“不能只……还必须……”可用分号连接，形成强对比。"
+    },
+    {
+      "id": "D05",
+      "title": "示范：阅读理解限定词如何防陷阱",
+      "source": "The report suggests that AI may improve administrative efficiency, but it does not claim that algorithms can replace human judgment in all public decisions.",
+      "answer": "该报告认为，人工智能可能提高行政效率，但并未声称算法能够在所有公共决策中取代人的判断。",
+      "steps": [
+        "suggests 不等于 proves",
+        "may 不能漏",
+        "does not claim 是否定限定",
+        "in all public decisions 是范围限定"
+      ],
+      "why": "阅读和翻译共同考“限定词”：may / not claim / all 都是分数点。"
+    }
+  ]
 };
